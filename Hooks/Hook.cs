@@ -7,6 +7,7 @@ using TechTalk.SpecFlow;
 using OpenQA.Selenium.Appium;
 using OpenQA.Selenium.Appium.Windows;
 
+
 namespace WordPadTesting.Hooks
 {
     [Binding]

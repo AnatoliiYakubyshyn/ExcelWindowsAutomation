@@ -1,0 +1,116 @@
+TpTrace Information: 0 : 15708, 1, 2024/06/06, 15:38:20.301, 15837471285583, testhost.dll, DefaultEngineInvoker.Invoke: Testhost process started with args :[--port, 61930],[--endpoint, 127.0.0.1:061930],[--role, client],[--parentprocessid, 15707],[--diag, /Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/logs/log.host.24-06-06_15-38-20_24694_5.txt],[--tracelevel, 4],[--telemetryoptedin, false]
+TpTrace Information: 0 : 15708, 1, 2024/06/06, 15:38:20.316, 15837475699041, testhost.dll, DefaultEngineInvoker.SetParentProcessExitCallback: Monitoring parent process with id: '15707'
+TpTrace Information: 0 : 15708, 1, 2024/06/06, 15:38:20.319, 15837477936000, testhost.dll, DefaultEngineInvoker.GetConnectionInfo: Initialize communication on endpoint address: '127.0.0.1:061930'
+TpTrace Information: 0 : 15708, 1, 2024/06/06, 15:38:20.321, 15837480643625, testhost.dll, SocketClient.Start: connecting to server endpoint: 127.0.0.1:061930
+TpTrace Information: 0 : 15708, 5, 2024/06/06, 15:38:20.323, 15837482858916, testhost.dll, SocketClient.OnServerConnected: connected to server endpoint: 127.0.0.1:061930
+TpTrace Verbose: 0 : 15708, 5, 2024/06/06, 15:38:20.324, 15837483637208, testhost.dll, Connected to server, and starting MessageLoopAsync
+TpTrace Information: 0 : 15708, 1, 2024/06/06, 15:38:20.324, 15837483782916, testhost.dll, DefaultEngineInvoker.Invoke: Start Request Processing.
+TpTrace Information: 0 : 15708, 12, 2024/06/06, 15:38:20.325, 15837484076458, testhost.dll, DefaultEngineInvoker.StartProcessingAsync: Connected to vstest.console, Starting process requests.
+TpTrace Verbose: 0 : 15708, 5, 2024/06/06, 15:38:20.327, 15837486780500, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:61930 localEndPoint: [::ffff:127.0.0.1]:61931
+TpTrace Verbose: 0 : 15708, 5, 2024/06/06, 15:38:20.341, 15837500238000, testhost.dll, TcpClientExtensions.MessageLoopAsync: NotifyDataAvailable remoteEndPoint: [::ffff:127.0.0.1]:61930 localEndPoint: [::ffff:127.0.0.1]:61931
+TpTrace Information: 0 : 15708, 5, 2024/06/06, 15:38:20.383, 15837541989416, testhost.dll, TestRequestHandler.ProcessRequests: received message: (ProtocolVersion) -> 7
+TpTrace Verbose: 0 : 15708, 5, 2024/06/06, 15:38:20.394, 15837553530083, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"Logging TestHost Diagnostics in file: /Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/logs/log.host.24-06-06_15-38-20_24694_5.txt"}}
+TpTrace Verbose: 0 : 15708, 5, 2024/06/06, 15:38:20.394, 15837553607916, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:61930 localEndPoint: [::ffff:127.0.0.1]:61931
+TpTrace Verbose: 0 : 15708, 5, 2024/06/06, 15:38:20.394, 15837553629166, testhost.dll, TcpClientExtensions.MessageLoopAsync: NotifyDataAvailable remoteEndPoint: [::ffff:127.0.0.1]:61930 localEndPoint: [::ffff:127.0.0.1]:61931
+TpTrace Information: 0 : 15708, 5, 2024/06/06, 15:38:20.396, 15837555037166, testhost.dll, TestRequestHandler.ProcessRequests: received message: (TestExecution.Initialize) -> [
+  "/Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/bin/Debug/net8.0/NUnit3.TestAdapter.dll"
+]
+TpTrace Information: 0 : 15708, 5, 2024/06/06, 15:38:20.396, 15837555077166, testhost.dll, Execution Session Initialize.
+TpTrace Verbose: 0 : 15708, 5, 2024/06/06, 15:38:20.398, 15837557847125, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:61930 localEndPoint: [::ffff:127.0.0.1]:61931
+TpTrace Verbose: 0 : 15708, 5, 2024/06/06, 15:38:20.398, 15837557873500, testhost.dll, TcpClientExtensions.MessageLoopAsync: NotifyDataAvailable remoteEndPoint: [::ffff:127.0.0.1]:61930 localEndPoint: [::ffff:127.0.0.1]:61931
+TpTrace Verbose: 0 : 15708, 4, 2024/06/06, 15:38:20.399, 15837558871000, testhost.dll, TestExecutorService: Loading the extensions
+TpTrace Information: 0 : 15708, 5, 2024/06/06, 15:38:20.400, 15837559008000, testhost.dll, TestRequestHandler.ProcessRequests: received message: (TestExecution.StartWithSources) -> {
+  "AdapterSourceMap": {
+    "_none_": [
+      "/Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/bin/Debug/net8.0/WordPadTesting.dll"
+    ]
+  },
+  "RunSettings": "<RunSettings>\n  <RunConfiguration>\n    <ResultsDirectory>/Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/TestResults</ResultsDirectory>\n    <TargetFrameworkVersion>.NETCoreApp,Version=v8.0</TargetFrameworkVersion>\n    <DesignMode>False</DesignMode>\n    <CollectSourceInformation>False</CollectSourceInformation>\n  </RunConfiguration>\n  <LoggerRunSettings>\n    <Loggers>\n      <Logger friendlyName=\"Console\" assemblyQualifiedName=\"Microsoft.VisualStudio.TestPlatform.CommandLine.Internal.ConsoleLogger, vstest.console, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a\" codeBase=\"/usr/local/share/dotnet/sdk/8.0.204/vstest.console.dll\" enabled=\"True\">\n        <Configuration>\n          <Verbosity>minimal</Verbosity>\n        </Configuration>\n      </Logger>\n    </Loggers>\n  </LoggerRunSettings>\n</RunSettings>",
+  "TestExecutionContext": {
+    "FrequencyOfRunStatsChangeEvent": 10,
+    "RunStatsChangeEventTimeout": "00:00:01.5000000",
+    "InIsolation": false,
+    "KeepAlive": false,
+    "AreTestCaseLevelEventsRequired": false,
+    "IsDebug": false,
+    "TestCaseFilter": null,
+    "FilterOptions": null
+  },
+  "Package": null
+}
+TpTrace Information: 0 : 15708, 5, 2024/06/06, 15:38:20.400, 15837559043916, testhost.dll, Execution started.
+TpTrace Verbose: 0 : 15708, 4, 2024/06/06, 15:38:20.400, 15837559618708, testhost.dll, TestPluginCache.DiscoverTestExtensions: finding test extensions in assemblies endswith: TestAdapter.dll TPluginInfo: Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.Utilities.TestExecutorPluginInformation TExtension: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutor
+TpTrace Verbose: 0 : 15708, 4, 2024/06/06, 15:38:20.401, 15837560018666, testhost.dll, TestPluginCache.GetExtensionPaths: Filtered extension paths: 
+TpTrace Verbose: 0 : 15708, 4, 2024/06/06, 15:38:20.401, 15837560160708, testhost.dll, TestPluginCache.GetExtensionPaths: Added default extension paths: /Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/bin/Debug/net8.0/NUnit3.TestAdapter.dll
+TpTrace Verbose: 0 : 15708, 4, 2024/06/06, 15:38:20.401, 15837560170666, testhost.dll, TestPluginCache.GetExtensionPaths: Added unfilterableExtensionPaths: 
+TpTrace Information: 0 : 15708, 4, 2024/06/06, 15:38:20.401, 15837560765375, testhost.dll, AssemblyResolver.ctor: Creating AssemblyResolver with searchDirectories /Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/bin/Debug/net8.0
+TpTrace Verbose: 0 : 15708, 4, 2024/06/06, 15:38:20.402, 15837561158500, testhost.dll, TestPluginCache.DiscoverTestExtensions: Discovering the extensions using extension path.
+TpTrace Verbose: 0 : 15708, 4, 2024/06/06, 15:38:20.402, 15837561185708, testhost.dll, TestPluginCache.GetExtensionPaths: Filtered extension paths: 
+TpTrace Verbose: 0 : 15708, 4, 2024/06/06, 15:38:20.402, 15837561195208, testhost.dll, TestPluginCache.GetExtensionPaths: Added default extension paths: /Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/bin/Debug/net8.0/NUnit3.TestAdapter.dll
+TpTrace Verbose: 0 : 15708, 4, 2024/06/06, 15:38:20.402, 15837561201875, testhost.dll, TestPluginCache.GetExtensionPaths: Added unfilterableExtensionPaths: 
+TpTrace Verbose: 0 : 15708, 4, 2024/06/06, 15:38:20.402, 15837561218666, testhost.dll, TestPluginCache.DiscoverTestExtensions: Discovering the extensions using allExtensionPaths: /Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/bin/Debug/net8.0/NUnit3.TestAdapter.dll
+TpTrace Information: 0 : 15708, 4, 2024/06/06, 15:38:20.402, 15837561454333, testhost.dll, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories /Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/bin/Debug/net8.0
+TpTrace Information: 0 : 15708, 4, 2024/06/06, 15:38:20.403, 15837562331708, testhost.dll, AssemblyResolver.OnResolve: NUnit3.TestAdapter: Resolving assembly.
+TpTrace Information: 0 : 15708, 4, 2024/06/06, 15:38:20.406, 15837565397208, testhost.dll, AssemblyResolver.OnResolve: Resolved assembly: NUnit3.TestAdapter, from path: /Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/bin/Debug/net8.0/NUnit3.TestAdapter.dll
+TpTrace Verbose: 0 : 15708, 5, 2024/06/06, 15:38:20.407, 15837566779500, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:61930 localEndPoint: [::ffff:127.0.0.1]:61931
+TpTrace Information: 0 : 15708, 4, 2024/06/06, 15:38:20.412, 15837571843916, testhost.dll, AssemblyResolver.OnResolve: nunit.engine.api: Resolving assembly.
+TpTrace Information: 0 : 15708, 4, 2024/06/06, 15:38:20.413, 15837572019458, testhost.dll, AssemblyResolver.OnResolve: Resolved assembly: nunit.engine.api, from path: /Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/bin/Debug/net8.0/nunit.engine.api.dll
+TpTrace Verbose: 0 : 15708, 4, 2024/06/06, 15:38:20.414, 15837573663166, testhost.dll, TestPluginCache: Discovered the extensions using extension path ''.
+TpTrace Verbose: 0 : 15708, 4, 2024/06/06, 15:38:20.414, 15837573826583, testhost.dll, TestPluginCache: Discoverers are ''.
+TpTrace Verbose: 0 : 15708, 4, 2024/06/06, 15:38:20.414, 15837573848708, testhost.dll, TestPluginCache: Executors are 'executor://NUnit3TestExecutor'.
+TpTrace Verbose: 0 : 15708, 4, 2024/06/06, 15:38:20.414, 15837573866583, testhost.dll, TestPluginCache: Setting providers are ''.
+TpTrace Verbose: 0 : 15708, 4, 2024/06/06, 15:38:20.415, 15837573884416, testhost.dll, TestPluginCache: Loggers are ''.
+TpTrace Information: 0 : 15708, 4, 2024/06/06, 15:38:20.416, 15837575869458, testhost.dll, TestPluginManager.CreateTestExtension: Attempting to load test extension: NUnit.VisualStudio.TestAdapter.NUnit3TestExecutor
+TpTrace Verbose: 0 : 15708, 4, 2024/06/06, 15:38:20.417, 15837576344500, testhost.dll, TestExecutorExtensionManager: Loading executor NUnit.VisualStudio.TestAdapter.NUnit3TestExecutor
+TpTrace Verbose: 0 : 15708, 4, 2024/06/06, 15:38:20.417, 15837576355416, testhost.dll, TestExecutorService: Loaded the executors
+TpTrace Verbose: 0 : 15708, 4, 2024/06/06, 15:38:20.417, 15837576570666, testhost.dll, TestPluginCache.DiscoverTestExtensions: finding test extensions in assemblies endswith: TestAdapter.dll TPluginInfo: Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.Utilities.TestSettingsProviderPluginInformation TExtension: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ISettingsProvider
+TpTrace Verbose: 0 : 15708, 4, 2024/06/06, 15:38:20.417, 15837576642958, testhost.dll, TestPluginCache.GetExtensionPaths: Filtered extension paths: 
+TpTrace Verbose: 0 : 15708, 4, 2024/06/06, 15:38:20.417, 15837576652041, testhost.dll, TestPluginCache.GetExtensionPaths: Added default extension paths: /Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/bin/Debug/net8.0/NUnit3.TestAdapter.dll
+TpTrace Verbose: 0 : 15708, 4, 2024/06/06, 15:38:20.417, 15837576658125, testhost.dll, TestPluginCache.GetExtensionPaths: Added unfilterableExtensionPaths: 
+TpTrace Information: 0 : 15708, 4, 2024/06/06, 15:38:20.417, 15837576701125, testhost.dll, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories /Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/bin/Debug/net8.0
+TpTrace Verbose: 0 : 15708, 4, 2024/06/06, 15:38:20.417, 15837576710333, testhost.dll, TestPluginCache.DiscoverTestExtensions: Discovering the extensions using extension path.
+TpTrace Verbose: 0 : 15708, 4, 2024/06/06, 15:38:20.417, 15837576717375, testhost.dll, TestPluginCache.GetExtensionPaths: Filtered extension paths: 
+TpTrace Verbose: 0 : 15708, 4, 2024/06/06, 15:38:20.417, 15837576723291, testhost.dll, TestPluginCache.GetExtensionPaths: Added default extension paths: /Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/bin/Debug/net8.0/NUnit3.TestAdapter.dll
+TpTrace Verbose: 0 : 15708, 4, 2024/06/06, 15:38:20.417, 15837576730916, testhost.dll, TestPluginCache.GetExtensionPaths: Added unfilterableExtensionPaths: 
+TpTrace Verbose: 0 : 15708, 4, 2024/06/06, 15:38:20.417, 15837576747375, testhost.dll, TestPluginCache.DiscoverTestExtensions: Discovering the extensions using allExtensionPaths: /Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/bin/Debug/net8.0/NUnit3.TestAdapter.dll
+TpTrace Information: 0 : 15708, 4, 2024/06/06, 15:38:20.417, 15837576757625, testhost.dll, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories /Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/bin/Debug/net8.0
+TpTrace Verbose: 0 : 15708, 4, 2024/06/06, 15:38:20.417, 15837576807125, testhost.dll, TestPluginCache: Discovered the extensions using extension path ''.
+TpTrace Verbose: 0 : 15708, 4, 2024/06/06, 15:38:20.417, 15837576815250, testhost.dll, TestPluginCache: Discoverers are ''.
+TpTrace Verbose: 0 : 15708, 4, 2024/06/06, 15:38:20.417, 15837576824750, testhost.dll, TestPluginCache: Executors are 'executor://NUnit3TestExecutor'.
+TpTrace Verbose: 0 : 15708, 4, 2024/06/06, 15:38:20.417, 15837576844000, testhost.dll, TestPluginCache: Setting providers are ''.
+TpTrace Verbose: 0 : 15708, 4, 2024/06/06, 15:38:20.417, 15837576850583, testhost.dll, TestPluginCache: Loggers are ''.
+TpTrace Verbose: 0 : 15708, 4, 2024/06/06, 15:38:20.418, 15837577097833, testhost.dll, TestExecutorService: Loaded the settings providers
+TpTrace Information: 0 : 15708, 4, 2024/06/06, 15:38:20.418, 15837577105625, testhost.dll, TestExecutorService: Loaded the extensions
+TpTrace Information: 0 : 15708, 4, 2024/06/06, 15:38:20.437, 15837596434583, testhost.dll, TestDiscoveryManager: Discovering tests from sources /Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/bin/Debug/net8.0/WordPadTesting.dll
+TpTrace Verbose: 0 : 15708, 4, 2024/06/06, 15:38:20.438, 15837597041083, testhost.dll, TestPluginCache.DiscoverTestExtensions: finding test extensions in assemblies endswith: TestAdapter.dll TPluginInfo: Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.Utilities.TestDiscovererPluginInformation TExtension: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestDiscoverer
+TpTrace Verbose: 0 : 15708, 4, 2024/06/06, 15:38:20.438, 15837597068875, testhost.dll, TestPluginCache.GetExtensionPaths: Filtered extension paths: 
+TpTrace Verbose: 0 : 15708, 4, 2024/06/06, 15:38:20.438, 15837597079166, testhost.dll, TestPluginCache.GetExtensionPaths: Added default extension paths: /Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/bin/Debug/net8.0/NUnit3.TestAdapter.dll
+TpTrace Verbose: 0 : 15708, 4, 2024/06/06, 15:38:20.438, 15837597086125, testhost.dll, TestPluginCache.GetExtensionPaths: Added unfilterableExtensionPaths: 
+TpTrace Information: 0 : 15708, 4, 2024/06/06, 15:38:20.438, 15837597106458, testhost.dll, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories /Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/bin/Debug/net8.0
+TpTrace Verbose: 0 : 15708, 4, 2024/06/06, 15:38:20.438, 15837597117041, testhost.dll, TestPluginCache.DiscoverTestExtensions: Discovering the extensions using extension path.
+TpTrace Verbose: 0 : 15708, 4, 2024/06/06, 15:38:20.438, 15837597123958, testhost.dll, TestPluginCache.GetExtensionPaths: Filtered extension paths: 
+TpTrace Verbose: 0 : 15708, 4, 2024/06/06, 15:38:20.438, 15837597129791, testhost.dll, TestPluginCache.GetExtensionPaths: Added default extension paths: /Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/bin/Debug/net8.0/NUnit3.TestAdapter.dll
+TpTrace Verbose: 0 : 15708, 4, 2024/06/06, 15:38:20.438, 15837597135750, testhost.dll, TestPluginCache.GetExtensionPaths: Added unfilterableExtensionPaths: 
+TpTrace Verbose: 0 : 15708, 4, 2024/06/06, 15:38:20.438, 15837597142083, testhost.dll, TestPluginCache.DiscoverTestExtensions: Discovering the extensions using allExtensionPaths: /Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/bin/Debug/net8.0/NUnit3.TestAdapter.dll
+TpTrace Information: 0 : 15708, 4, 2024/06/06, 15:38:20.438, 15837597151625, testhost.dll, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories /Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/bin/Debug/net8.0
+TpTrace Verbose: 0 : 15708, 4, 2024/06/06, 15:38:20.440, 15837599257333, testhost.dll, TestPluginCache: Discovered the extensions using extension path ''.
+TpTrace Verbose: 0 : 15708, 4, 2024/06/06, 15:38:20.440, 15837599275291, testhost.dll, TestPluginCache: Discoverers are 'NUnit.VisualStudio.TestAdapter.NUnit3TestDiscoverer, NUnit3.TestAdapter, Version=3.17.0.0, Culture=neutral, PublicKeyToken=4cb40d35494691ac'.
+TpTrace Verbose: 0 : 15708, 4, 2024/06/06, 15:38:20.440, 15837599282708, testhost.dll, TestPluginCache: Executors are 'executor://NUnit3TestExecutor'.
+TpTrace Verbose: 0 : 15708, 4, 2024/06/06, 15:38:20.440, 15837599289083, testhost.dll, TestPluginCache: Setting providers are ''.
+TpTrace Verbose: 0 : 15708, 4, 2024/06/06, 15:38:20.440, 15837599295375, testhost.dll, TestPluginCache: Loggers are ''.
+TpTrace Information: 0 : 15708, 4, 2024/06/06, 15:38:20.441, 15837600469041, testhost.dll, PEReaderHelper.GetAssemblyType: Determined assemblyType:'Managed' for source: '/Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/bin/Debug/net8.0/WordPadTesting.dll'
+TpTrace Verbose: 0 : 15708, 4, 2024/06/06, 15:38:20.442, 15837601843208, testhost.dll, BaseRunTests.RunTestInternalWithExecutors: Running tests for executor://NUnit3TestExecutor
+TpTrace Information: 0 : 15708, 4, 2024/06/06, 15:38:20.443, 15837602266916, testhost.dll, AssemblyResolver.OnResolve: nunit.engine: Resolving assembly.
+TpTrace Information: 0 : 15708, 4, 2024/06/06, 15:38:20.443, 15837602422416, testhost.dll, AssemblyResolver.OnResolve: Resolved assembly: nunit.engine, from path: /Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/bin/Debug/net8.0/nunit.engine.dll
+TpTrace Information: 0 : 15708, 4, 2024/06/06, 15:38:20.443, 15837602443416, testhost.dll, AssemblyResolver.OnResolve: nunit.engine.core: Resolving assembly.
+TpTrace Information: 0 : 15708, 4, 2024/06/06, 15:38:20.443, 15837602560625, testhost.dll, AssemblyResolver.OnResolve: Resolved assembly: nunit.engine.core, from path: /Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/bin/Debug/net8.0/nunit.engine.core.dll
+TpTrace Information: 0 : 15708, 4, 2024/06/06, 15:38:20.447, 15837606050208, testhost.dll, NUnit Adapter 3.17.0.0: Test execution started
+TpTrace Verbose: 0 : 15708, 4, 2024/06/06, 15:38:20.447, 15837606117791, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"NUnit Adapter 3.17.0.0: Test execution started"}}
+TpTrace Information: 0 : 15708, 4, 2024/06/06, 15:38:20.456, 15837615171958, testhost.dll, Running all tests in /Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/bin/Debug/net8.0/WordPadTesting.dll
+TpTrace Verbose: 0 : 15708, 4, 2024/06/06, 15:38:20.456, 15837615236708, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"Running all tests in /Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/bin/Debug/net8.0/WordPadTesting.dll"}}
+TpTrace Information: 0 : 15708, 4, 2024/06/06, 15:38:20.458, 15837617674250, testhost.dll, AssemblyResolver.OnResolve: Mono.Cecil: Resolving assembly.
+TpTrace Information: 0 : 15708, 4, 2024/06/06, 15:38:20.458, 15837617698750, testhost.dll, AssemblyResolver.OnResolve: Mono.Cecil: Failed to load assembly.
+TpTrace Information: 0 : 15708, 4, 2024/06/06, 15:38:20.504, 15837663624750, testhost.dll,    NUnit3TestExecutor discovered 3 of 3 NUnit test cases
+TpTrace Verbose: 0 : 15708, 4, 2024/06/06, 15:38:20.504, 15837663718375, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"   NUnit3TestExecutor discovered 3 of 3 NUnit test cases"}}
+TpTrace Information: 0 : 15708, 15, 2024/06/06, 15:38:20.516, 15837675516708, testhost.dll, AssemblyResolver.OnResolve: NLog: Resolving assembly.
+TpTrace Information: 0 : 15708, 15, 2024/06/06, 15:38:20.516, 15837675561000, testhost.dll, AssemblyResolver.OnResolve: NLog: Failed to load assembly.

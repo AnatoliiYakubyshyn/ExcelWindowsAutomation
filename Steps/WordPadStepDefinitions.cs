@@ -2,10 +2,15 @@ using ExcelTesting.Pages;
 using NUnit.Framework;
 using OpenQA.Selenium.Appium.Windows;
 using TechTalk.SpecFlow;
+using ZebrunnerAgent.Attributes;
+
+[assembly: ZebrunnerAssembly]
 
 namespace WordPadTesting.Steps
 {
     [Binding]
+    [TestFixture, ZebrunnerAssemblyTest]
+    
     public sealed class WordPadStepDefinitions
     {
         private WindowsDriver<WindowsElement> driver;
