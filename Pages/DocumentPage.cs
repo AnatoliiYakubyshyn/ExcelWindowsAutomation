@@ -22,5 +22,18 @@ namespace ExcelTesting.Pages
         public void TypeText(string text) {
             GetWordPadPage().SendKeys(text);
         }
+
+         public void InsertDateTime()
+        {
+            var homeTab = Driver.FindElementByName("Home");
+            homeTab.Click();
+            
+            var dateAndTimeButton = Driver.FindElementByName("Date and time");
+            dateAndTimeButton.Click();
+
+            var okButton = Driver.FindElementByName("OK");
+            okButton.Click();
+        }
+        
     }
 }
