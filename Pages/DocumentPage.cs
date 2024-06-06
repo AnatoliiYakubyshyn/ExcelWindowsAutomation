@@ -10,6 +10,18 @@ namespace ExcelTesting.Pages
         private WindowsElement GetWordPadPage() {
             return Driver.FindElementByName("Rich Text Window");
         }
+        
+        private WindowsElement HomeTab() {
+            return Driver.FindElementByName("Home");
+        }
+
+        private WindowsElement DateAndTimeButton() {
+            return Driver.FindElementByName("Date and time");
+        }
+
+        private WindowsElement OkButton() {
+            return Driver.FindElementByName("OK");
+        }
 
         public void ClearText() {
             GetWordPadPage().Clear();
@@ -25,15 +37,9 @@ namespace ExcelTesting.Pages
 
          public void InsertDateTime()
         {
-            var homeTab = Driver.FindElementByName("Home");
-            homeTab.Click();
-            
-            var dateAndTimeButton = Driver.FindElementByName("Date and time");
-            dateAndTimeButton.Click();
-
-            var okButton = Driver.FindElementByName("OK");
-            okButton.Click();
+            HomeTab().Click();
+            DateAndTimeButton().Click();
+            OkButton().Click();
         }
-        
     }
 }
