@@ -7,7 +7,7 @@ using TechTalk.SpecFlow;
 using OpenQA.Selenium.Appium;
 using OpenQA.Selenium.Appium.Windows;
 
-namespace ExcelTesting.Hooks
+namespace WordPadTesting.Hooks
 {
     [Binding]
     public class Hooks
@@ -25,7 +25,8 @@ namespace ExcelTesting.Hooks
         [AfterScenario]
         public void TearDown()
         {
-            driver.CloseApp();
+            driver.FindElementByName("Close").Click();
+            driver.FindElementByName("Don't Save").Click();
             driver.Quit();
         }
 
@@ -34,7 +35,7 @@ namespace ExcelTesting.Hooks
         {
             var appiumOptions = new AppiumOptions();
             
-            appiumOptions.AddAdditionalCapability("app", "win32calc.exe");
+            appiumOptions.AddAdditionalCapability("app", @"C:\Program Files\Windows NT\Accessories\wordpad.exe");
             string urlString = $"http://18.196.125.117:4723/wd/hub";
             Uri url = new Uri(urlString);
 
