@@ -1,0 +1,28 @@
+name: .NET Core
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: '6.0.x'
+    - name: Restore dependencies
+      run: dotnet restore
+    - name: Build
+      run: dotnet build --no-restore
+    - name: Test
+      env:
+        REPORTING_ENABLED: true
+        REPORTING_SERVER_HOSTNAME: https://solvdinternal.zebrunner.com
+        REPORTING_SERVER_ACCESS_TOKEN: Q9iDni3N6wIm5YBNbXImmnPLfAKh0iEm3hbA4hPclsBtRljuTq
+        REPORTING_PROJECT_KEY: CR1
+        REPORTING_RUN_ENVIRONMENT: 0.0.0.1
+        REPORTING_RUN_BUILD: DEMO
+      run: dotnet test --no-build --verbosity normal
