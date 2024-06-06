@@ -6,11 +6,11 @@ using ZebrunnerAgent.Attributes;
 
 [assembly: ZebrunnerAssembly]
 
+
 namespace WordPadTesting.Steps
 {
     [Binding]
-    [TestFixture, ZebrunnerAssemblyTest]
-    
+    [TestFixture, ZebrunnerClass, ZebrunnerTest]
     public sealed class WordPadStepDefinitions
     {
         private WindowsDriver<WindowsElement> driver;

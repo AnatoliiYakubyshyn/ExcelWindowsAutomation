@@ -1,0 +1,562 @@
+TpTrace Information: 0 : 20049, 1, 2024/06/06, 17:14:14.597, 21591766628916, testhost.dll, DefaultEngineInvoker.Invoke: Testhost process started with args :[--port, 50718],[--endpoint, 127.0.0.1:050718],[--role, client],[--parentprocessid, 20048],[--diag, /Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/log.host.24-06-06_17-14-14_53695_5.txt],[--tracelevel, 4],[--telemetryoptedin, false]
+TpTrace Information: 0 : 20049, 1, 2024/06/06, 17:14:14.612, 21591771161958, testhost.dll, DefaultEngineInvoker.SetParentProcessExitCallback: Monitoring parent process with id: '20048'
+TpTrace Information: 0 : 20049, 1, 2024/06/06, 17:14:14.614, 21591773546583, testhost.dll, DefaultEngineInvoker.GetConnectionInfo: Initialize communication on endpoint address: '127.0.0.1:050718'
+TpTrace Information: 0 : 20049, 1, 2024/06/06, 17:14:14.617, 21591776492958, testhost.dll, SocketClient.Start: connecting to server endpoint: 127.0.0.1:050718
+TpTrace Information: 0 : 20049, 5, 2024/06/06, 17:14:14.619, 21591778652875, testhost.dll, SocketClient.OnServerConnected: connected to server endpoint: 127.0.0.1:050718
+TpTrace Verbose: 0 : 20049, 5, 2024/06/06, 17:14:14.620, 21591779333375, testhost.dll, Connected to server, and starting MessageLoopAsync
+TpTrace Information: 0 : 20049, 1, 2024/06/06, 17:14:14.621, 21591779670416, testhost.dll, DefaultEngineInvoker.Invoke: Start Request Processing.
+TpTrace Information: 0 : 20049, 12, 2024/06/06, 17:14:14.621, 21591779959666, testhost.dll, DefaultEngineInvoker.StartProcessingAsync: Connected to vstest.console, Starting process requests.
+TpTrace Verbose: 0 : 20049, 5, 2024/06/06, 17:14:14.623, 21591782356750, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:50718 localEndPoint: [::ffff:127.0.0.1]:50719
+TpTrace Verbose: 0 : 20049, 5, 2024/06/06, 17:14:14.637, 21591796278333, testhost.dll, TcpClientExtensions.MessageLoopAsync: NotifyDataAvailable remoteEndPoint: [::ffff:127.0.0.1]:50718 localEndPoint: [::ffff:127.0.0.1]:50719
+TpTrace Information: 0 : 20049, 5, 2024/06/06, 17:14:14.679, 21591837815125, testhost.dll, TestRequestHandler.ProcessRequests: received message: (ProtocolVersion) -> 7
+TpTrace Verbose: 0 : 20049, 5, 2024/06/06, 17:14:14.689, 21591848366833, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"Logging TestHost Diagnostics in file: /Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/log.host.24-06-06_17-14-14_53695_5.txt"}}
+TpTrace Verbose: 0 : 20049, 5, 2024/06/06, 17:14:14.689, 21591848434875, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:50718 localEndPoint: [::ffff:127.0.0.1]:50719
+TpTrace Verbose: 0 : 20049, 5, 2024/06/06, 17:14:14.689, 21591848459166, testhost.dll, TcpClientExtensions.MessageLoopAsync: NotifyDataAvailable remoteEndPoint: [::ffff:127.0.0.1]:50718 localEndPoint: [::ffff:127.0.0.1]:50719
+TpTrace Information: 0 : 20049, 5, 2024/06/06, 17:14:14.691, 21591849677416, testhost.dll, TestRequestHandler.ProcessRequests: received message: (TestExecution.Initialize) -> [
+  "/Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/bin/Debug/net8.0/NUnit3.TestAdapter.dll"
+]
+TpTrace Information: 0 : 20049, 5, 2024/06/06, 17:14:14.691, 21591849710791, testhost.dll, Execution Session Initialize.
+TpTrace Verbose: 0 : 20049, 5, 2024/06/06, 17:14:14.693, 21591852316791, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:50718 localEndPoint: [::ffff:127.0.0.1]:50719
+TpTrace Verbose: 0 : 20049, 5, 2024/06/06, 17:14:14.693, 21591852340958, testhost.dll, TcpClientExtensions.MessageLoopAsync: NotifyDataAvailable remoteEndPoint: [::ffff:127.0.0.1]:50718 localEndPoint: [::ffff:127.0.0.1]:50719
+TpTrace Verbose: 0 : 20049, 4, 2024/06/06, 17:14:14.694, 21591853260750, testhost.dll, TestExecutorService: Loading the extensions
+TpTrace Information: 0 : 20049, 5, 2024/06/06, 17:14:14.694, 21591853388666, testhost.dll, TestRequestHandler.ProcessRequests: received message: (TestExecution.StartWithSources) -> {
+  "AdapterSourceMap": {
+    "_none_": [
+      "/Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/bin/Debug/net8.0/WordPadTesting.dll"
+    ]
+  },
+  "RunSettings": "<RunSettings>\n  <RunConfiguration>\n    <ResultsDirectory>/Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/TestResults</ResultsDirectory>\n    <TargetFrameworkVersion>.NETCoreApp,Version=v8.0</TargetFrameworkVersion>\n    <DesignMode>False</DesignMode>\n    <CollectSourceInformation>False</CollectSourceInformation>\n  </RunConfiguration>\n  <LoggerRunSettings>\n    <Loggers>\n      <Logger friendlyName=\"Console\" assemblyQualifiedName=\"Microsoft.VisualStudio.TestPlatform.CommandLine.Internal.ConsoleLogger, vstest.console, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a\" codeBase=\"/usr/local/share/dotnet/sdk/8.0.204/vstest.console.dll\" enabled=\"True\">\n        <Configuration>\n          <Verbosity>minimal</Verbosity>\n        </Configuration>\n      </Logger>\n    </Loggers>\n  </LoggerRunSettings>\n</RunSettings>",
+  "TestExecutionContext": {
+    "FrequencyOfRunStatsChangeEvent": 10,
+    "RunStatsChangeEventTimeout": "00:00:01.5000000",
+    "InIsolation": false,
+    "KeepAlive": false,
+    "AreTestCaseLevelEventsRequired": false,
+    "IsDebug": false,
+    "TestCaseFilter": null,
+    "FilterOptions": null
+  },
+  "Package": null
+}
+TpTrace Information: 0 : 20049, 5, 2024/06/06, 17:14:14.694, 21591853442208, testhost.dll, Execution started.
+TpTrace Verbose: 0 : 20049, 4, 2024/06/06, 17:14:14.695, 21591853962666, testhost.dll, TestPluginCache.DiscoverTestExtensions: finding test extensions in assemblies endswith: TestAdapter.dll TPluginInfo: Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.Utilities.TestExecutorPluginInformation TExtension: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutor
+TpTrace Verbose: 0 : 20049, 4, 2024/06/06, 17:14:14.695, 21591854381208, testhost.dll, TestPluginCache.GetExtensionPaths: Filtered extension paths: 
+TpTrace Verbose: 0 : 20049, 4, 2024/06/06, 17:14:14.695, 21591854520875, testhost.dll, TestPluginCache.GetExtensionPaths: Added default extension paths: /Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/bin/Debug/net8.0/NUnit3.TestAdapter.dll
+TpTrace Verbose: 0 : 20049, 4, 2024/06/06, 17:14:14.695, 21591854536541, testhost.dll, TestPluginCache.GetExtensionPaths: Added unfilterableExtensionPaths: 
+TpTrace Information: 0 : 20049, 4, 2024/06/06, 17:14:14.696, 21591855193166, testhost.dll, AssemblyResolver.ctor: Creating AssemblyResolver with searchDirectories /Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/bin/Debug/net8.0
+TpTrace Verbose: 0 : 20049, 4, 2024/06/06, 17:14:14.696, 21591855589333, testhost.dll, TestPluginCache.DiscoverTestExtensions: Discovering the extensions using extension path.
+TpTrace Verbose: 0 : 20049, 4, 2024/06/06, 17:14:14.696, 21591855624125, testhost.dll, TestPluginCache.GetExtensionPaths: Filtered extension paths: 
+TpTrace Verbose: 0 : 20049, 4, 2024/06/06, 17:14:14.696, 21591855634291, testhost.dll, TestPluginCache.GetExtensionPaths: Added default extension paths: /Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/bin/Debug/net8.0/NUnit3.TestAdapter.dll
+TpTrace Verbose: 0 : 20049, 4, 2024/06/06, 17:14:14.696, 21591855640708, testhost.dll, TestPluginCache.GetExtensionPaths: Added unfilterableExtensionPaths: 
+TpTrace Verbose: 0 : 20049, 4, 2024/06/06, 17:14:14.697, 21591855661000, testhost.dll, TestPluginCache.DiscoverTestExtensions: Discovering the extensions using allExtensionPaths: /Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/bin/Debug/net8.0/NUnit3.TestAdapter.dll
+TpTrace Information: 0 : 20049, 4, 2024/06/06, 17:14:14.697, 21591855897750, testhost.dll, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories /Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/bin/Debug/net8.0
+TpTrace Information: 0 : 20049, 4, 2024/06/06, 17:14:14.698, 21591856808083, testhost.dll, AssemblyResolver.OnResolve: NUnit3.TestAdapter: Resolving assembly.
+TpTrace Information: 0 : 20049, 4, 2024/06/06, 17:14:14.701, 21591859987333, testhost.dll, AssemblyResolver.OnResolve: Resolved assembly: NUnit3.TestAdapter, from path: /Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/bin/Debug/net8.0/NUnit3.TestAdapter.dll
+TpTrace Verbose: 0 : 20049, 5, 2024/06/06, 17:14:14.703, 21591861904750, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:50718 localEndPoint: [::ffff:127.0.0.1]:50719
+TpTrace Information: 0 : 20049, 4, 2024/06/06, 17:14:14.707, 21591866440750, testhost.dll, AssemblyResolver.OnResolve: nunit.engine.api: Resolving assembly.
+TpTrace Information: 0 : 20049, 4, 2024/06/06, 17:14:14.707, 21591866615666, testhost.dll, AssemblyResolver.OnResolve: Resolved assembly: nunit.engine.api, from path: /Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/bin/Debug/net8.0/nunit.engine.api.dll
+TpTrace Verbose: 0 : 20049, 4, 2024/06/06, 17:14:14.709, 21591868280208, testhost.dll, TestPluginCache: Discovered the extensions using extension path ''.
+TpTrace Verbose: 0 : 20049, 4, 2024/06/06, 17:14:14.709, 21591868439208, testhost.dll, TestPluginCache: Discoverers are ''.
+TpTrace Verbose: 0 : 20049, 4, 2024/06/06, 17:14:14.709, 21591868458333, testhost.dll, TestPluginCache: Executors are 'executor://NUnit3TestExecutor'.
+TpTrace Verbose: 0 : 20049, 4, 2024/06/06, 17:14:14.709, 21591868476125, testhost.dll, TestPluginCache: Setting providers are ''.
+TpTrace Verbose: 0 : 20049, 4, 2024/06/06, 17:14:14.709, 21591868495583, testhost.dll, TestPluginCache: Loggers are ''.
+TpTrace Information: 0 : 20049, 4, 2024/06/06, 17:14:14.711, 21591870513791, testhost.dll, TestPluginManager.CreateTestExtension: Attempting to load test extension: NUnit.VisualStudio.TestAdapter.NUnit3TestExecutor
+TpTrace Verbose: 0 : 20049, 4, 2024/06/06, 17:14:14.712, 21591870994375, testhost.dll, TestExecutorExtensionManager: Loading executor NUnit.VisualStudio.TestAdapter.NUnit3TestExecutor
+TpTrace Verbose: 0 : 20049, 4, 2024/06/06, 17:14:14.712, 21591871005000, testhost.dll, TestExecutorService: Loaded the executors
+TpTrace Verbose: 0 : 20049, 4, 2024/06/06, 17:14:14.712, 21591871231041, testhost.dll, TestPluginCache.DiscoverTestExtensions: finding test extensions in assemblies endswith: TestAdapter.dll TPluginInfo: Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.Utilities.TestSettingsProviderPluginInformation TExtension: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ISettingsProvider
+TpTrace Verbose: 0 : 20049, 4, 2024/06/06, 17:14:14.712, 21591871315583, testhost.dll, TestPluginCache.GetExtensionPaths: Filtered extension paths: 
+TpTrace Verbose: 0 : 20049, 4, 2024/06/06, 17:14:14.712, 21591871325333, testhost.dll, TestPluginCache.GetExtensionPaths: Added default extension paths: /Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/bin/Debug/net8.0/NUnit3.TestAdapter.dll
+TpTrace Verbose: 0 : 20049, 4, 2024/06/06, 17:14:14.712, 21591871331833, testhost.dll, TestPluginCache.GetExtensionPaths: Added unfilterableExtensionPaths: 
+TpTrace Information: 0 : 20049, 4, 2024/06/06, 17:14:14.712, 21591871384125, testhost.dll, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories /Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/bin/Debug/net8.0
+TpTrace Verbose: 0 : 20049, 4, 2024/06/06, 17:14:14.712, 21591871394125, testhost.dll, TestPluginCache.DiscoverTestExtensions: Discovering the extensions using extension path.
+TpTrace Verbose: 0 : 20049, 4, 2024/06/06, 17:14:14.712, 21591871401083, testhost.dll, TestPluginCache.GetExtensionPaths: Filtered extension paths: 
+TpTrace Verbose: 0 : 20049, 4, 2024/06/06, 17:14:14.712, 21591871407625, testhost.dll, TestPluginCache.GetExtensionPaths: Added default extension paths: /Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/bin/Debug/net8.0/NUnit3.TestAdapter.dll
+TpTrace Verbose: 0 : 20049, 4, 2024/06/06, 17:14:14.712, 21591871418541, testhost.dll, TestPluginCache.GetExtensionPaths: Added unfilterableExtensionPaths: 
+TpTrace Verbose: 0 : 20049, 4, 2024/06/06, 17:14:14.712, 21591871434041, testhost.dll, TestPluginCache.DiscoverTestExtensions: Discovering the extensions using allExtensionPaths: /Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/bin/Debug/net8.0/NUnit3.TestAdapter.dll
+TpTrace Information: 0 : 20049, 4, 2024/06/06, 17:14:14.712, 21591871472166, testhost.dll, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories /Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/bin/Debug/net8.0
+TpTrace Verbose: 0 : 20049, 4, 2024/06/06, 17:14:14.712, 21591871529250, testhost.dll, TestPluginCache: Discovered the extensions using extension path ''.
+TpTrace Verbose: 0 : 20049, 4, 2024/06/06, 17:14:14.712, 21591871539250, testhost.dll, TestPluginCache: Discoverers are ''.
+TpTrace Verbose: 0 : 20049, 4, 2024/06/06, 17:14:14.712, 21591871548916, testhost.dll, TestPluginCache: Executors are 'executor://NUnit3TestExecutor'.
+TpTrace Verbose: 0 : 20049, 4, 2024/06/06, 17:14:14.712, 21591871577500, testhost.dll, TestPluginCache: Setting providers are ''.
+TpTrace Verbose: 0 : 20049, 4, 2024/06/06, 17:14:14.712, 21591871584583, testhost.dll, TestPluginCache: Loggers are ''.
+TpTrace Verbose: 0 : 20049, 4, 2024/06/06, 17:14:14.713, 21591871851166, testhost.dll, TestExecutorService: Loaded the settings providers
+TpTrace Information: 0 : 20049, 4, 2024/06/06, 17:14:14.713, 21591871858791, testhost.dll, TestExecutorService: Loaded the extensions
+TpTrace Information: 0 : 20049, 4, 2024/06/06, 17:14:14.732, 21591891512166, testhost.dll, TestDiscoveryManager: Discovering tests from sources /Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/bin/Debug/net8.0/WordPadTesting.dll
+TpTrace Verbose: 0 : 20049, 4, 2024/06/06, 17:14:14.733, 21591892118666, testhost.dll, TestPluginCache.DiscoverTestExtensions: finding test extensions in assemblies endswith: TestAdapter.dll TPluginInfo: Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.Utilities.TestDiscovererPluginInformation TExtension: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestDiscoverer
+TpTrace Verbose: 0 : 20049, 4, 2024/06/06, 17:14:14.733, 21591892149208, testhost.dll, TestPluginCache.GetExtensionPaths: Filtered extension paths: 
+TpTrace Verbose: 0 : 20049, 4, 2024/06/06, 17:14:14.733, 21591892159625, testhost.dll, TestPluginCache.GetExtensionPaths: Added default extension paths: /Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/bin/Debug/net8.0/NUnit3.TestAdapter.dll
+TpTrace Verbose: 0 : 20049, 4, 2024/06/06, 17:14:14.733, 21591892166416, testhost.dll, TestPluginCache.GetExtensionPaths: Added unfilterableExtensionPaths: 
+TpTrace Information: 0 : 20049, 4, 2024/06/06, 17:14:14.733, 21591892185375, testhost.dll, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories /Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/bin/Debug/net8.0
+TpTrace Verbose: 0 : 20049, 4, 2024/06/06, 17:14:14.733, 21591892194416, testhost.dll, TestPluginCache.DiscoverTestExtensions: Discovering the extensions using extension path.
+TpTrace Verbose: 0 : 20049, 4, 2024/06/06, 17:14:14.733, 21591892201125, testhost.dll, TestPluginCache.GetExtensionPaths: Filtered extension paths: 
+TpTrace Verbose: 0 : 20049, 4, 2024/06/06, 17:14:14.733, 21591892207041, testhost.dll, TestPluginCache.GetExtensionPaths: Added default extension paths: /Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/bin/Debug/net8.0/NUnit3.TestAdapter.dll
+TpTrace Verbose: 0 : 20049, 4, 2024/06/06, 17:14:14.733, 21591892216666, testhost.dll, TestPluginCache.GetExtensionPaths: Added unfilterableExtensionPaths: 
+TpTrace Verbose: 0 : 20049, 4, 2024/06/06, 17:14:14.733, 21591892223458, testhost.dll, TestPluginCache.DiscoverTestExtensions: Discovering the extensions using allExtensionPaths: /Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/bin/Debug/net8.0/NUnit3.TestAdapter.dll
+TpTrace Information: 0 : 20049, 4, 2024/06/06, 17:14:14.733, 21591892233291, testhost.dll, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories /Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/bin/Debug/net8.0
+TpTrace Verbose: 0 : 20049, 4, 2024/06/06, 17:14:14.735, 21591894323041, testhost.dll, TestPluginCache: Discovered the extensions using extension path ''.
+TpTrace Verbose: 0 : 20049, 4, 2024/06/06, 17:14:14.735, 21591894340791, testhost.dll, TestPluginCache: Discoverers are 'NUnit.VisualStudio.TestAdapter.NUnit3TestDiscoverer, NUnit3.TestAdapter, Version=3.17.0.0, Culture=neutral, PublicKeyToken=4cb40d35494691ac'.
+TpTrace Verbose: 0 : 20049, 4, 2024/06/06, 17:14:14.735, 21591894348208, testhost.dll, TestPluginCache: Executors are 'executor://NUnit3TestExecutor'.
+TpTrace Verbose: 0 : 20049, 4, 2024/06/06, 17:14:14.735, 21591894354500, testhost.dll, TestPluginCache: Setting providers are ''.
+TpTrace Verbose: 0 : 20049, 4, 2024/06/06, 17:14:14.735, 21591894360625, testhost.dll, TestPluginCache: Loggers are ''.
+TpTrace Information: 0 : 20049, 4, 2024/06/06, 17:14:14.736, 21591895551875, testhost.dll, PEReaderHelper.GetAssemblyType: Determined assemblyType:'Managed' for source: '/Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/bin/Debug/net8.0/WordPadTesting.dll'
+TpTrace Verbose: 0 : 20049, 4, 2024/06/06, 17:14:14.738, 21591896934833, testhost.dll, BaseRunTests.RunTestInternalWithExecutors: Running tests for executor://NUnit3TestExecutor
+TpTrace Information: 0 : 20049, 4, 2024/06/06, 17:14:14.738, 21591897367666, testhost.dll, AssemblyResolver.OnResolve: nunit.engine: Resolving assembly.
+TpTrace Information: 0 : 20049, 4, 2024/06/06, 17:14:14.738, 21591897523791, testhost.dll, AssemblyResolver.OnResolve: Resolved assembly: nunit.engine, from path: /Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/bin/Debug/net8.0/nunit.engine.dll
+TpTrace Information: 0 : 20049, 4, 2024/06/06, 17:14:14.738, 21591897542500, testhost.dll, AssemblyResolver.OnResolve: nunit.engine.core: Resolving assembly.
+TpTrace Information: 0 : 20049, 4, 2024/06/06, 17:14:14.739, 21591897660333, testhost.dll, AssemblyResolver.OnResolve: Resolved assembly: nunit.engine.core, from path: /Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/bin/Debug/net8.0/nunit.engine.core.dll
+TpTrace Information: 0 : 20049, 4, 2024/06/06, 17:14:14.742, 21591900904291, testhost.dll, NUnit Adapter 3.17.0.0: Test execution started
+TpTrace Verbose: 0 : 20049, 4, 2024/06/06, 17:14:14.742, 21591900953958, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"NUnit Adapter 3.17.0.0: Test execution started"}}
+TpTrace Information: 0 : 20049, 4, 2024/06/06, 17:14:14.750, 21591909262791, testhost.dll, Running all tests in /Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/bin/Debug/net8.0/WordPadTesting.dll
+TpTrace Verbose: 0 : 20049, 4, 2024/06/06, 17:14:14.750, 21591909312541, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"Running all tests in /Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/bin/Debug/net8.0/WordPadTesting.dll"}}
+TpTrace Information: 0 : 20049, 4, 2024/06/06, 17:14:14.796, 21591955272458, testhost.dll,    NUnit3TestExecutor discovered 3 of 3 NUnit test cases
+TpTrace Verbose: 0 : 20049, 4, 2024/06/06, 17:14:14.796, 21591955352375, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"   NUnit3TestExecutor discovered 3 of 3 NUnit test cases"}}
+TpTrace Information: 0 : 20049, 15, 2024/06/06, 17:14:14.816, 21591975072500, testhost.dll, AssemblyResolver.OnResolve: RestSharp: Resolving assembly.
+TpTrace Information: 0 : 20049, 15, 2024/06/06, 17:14:14.816, 21591975120416, testhost.dll, AssemblyResolver.OnResolve: RestSharp: Failed to load assembly.
+TpTrace Information: 0 : 20049, 15, 2024/06/06, 17:14:14.818, 21591977653833, testhost.dll, AssemblyResolver.OnResolve: RestSharp.Serializers.NewtonsoftJson: Resolving assembly.
+TpTrace Information: 0 : 20049, 15, 2024/06/06, 17:14:14.819, 21591977677041, testhost.dll, AssemblyResolver.OnResolve: RestSharp.Serializers.NewtonsoftJson: Failed to load assembly.
+TpTrace Information: 0 : 20049, 15, 2024/06/06, 17:14:14.819, 21591977859833, testhost.dll, AssemblyResolver.OnResolve: RestSharp: Resolving assembly.
+TpTrace Information: 0 : 20049, 15, 2024/06/06, 17:14:14.819, 21591977875458, testhost.dll, AssemblyResolver.OnResolve: RestSharp: Resolved from cache.
+TpTrace Verbose: 0 : 20049, 5, 2024/06/06, 17:14:15.704, 21592862992416, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:50718 localEndPoint: [::ffff:127.0.0.1]:50719
+TpTrace Verbose: 0 : 20049, 14, 2024/06/06, 17:14:16.216, 21593375571000, testhost.dll, TestExecutionRecorder.RecordStart: Starting test: WordPadTesting.Features.TypeTextFeature.CheckTextContent("hello world!",null).
+TpTrace Information: 0 : 20049, 14, 2024/06/06, 17:14:16.217, 21593376496708, testhost.dll, Sending test run statistics
+TpTrace Verbose: 0 : 20049, 14, 2024/06/06, 17:14:16.230, 21593389061916, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.StatsChange","Payload":{"NewTestResults":[],"TestRunStatistics":{"ExecutedTests":0,"Stats":{}},"ActiveTests":[{"Id":"a1c3a866-d017-c3e5-4f5e-130dc7fca386","FullyQualifiedName":"WordPadTesting.Features.TypeTextFeature.CheckTextContent(\"hello world!\",null)","DisplayName":"CheckTextContent(\"hello world!\",null)","ExecutorUri":"executor://NUnit3TestExecutor","Source":"/Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/bin/Debug/net8.0/WordPadTesting.dll","CodeFilePath":null,"LineNumber":0,"Properties":[]}]}}
+TpTrace Verbose: 0 : 20049, 14, 2024/06/06, 17:14:16.230, 21593389187875, testhost.dll, TestRunCache: OnNewTestResult: Notified the onCacheHit callback.
+TpTrace Verbose: 0 : 20049, 5, 2024/06/06, 17:14:16.705, 21593864113791, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:50718 localEndPoint: [::ffff:127.0.0.1]:50719
+TpTrace Verbose: 0 : 20049, 5, 2024/06/06, 17:14:17.706, 21594865563208, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:50718 localEndPoint: [::ffff:127.0.0.1]:50719
+TpTrace Verbose: 0 : 20049, 5, 2024/06/06, 17:14:18.708, 21595867480291, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:50718 localEndPoint: [::ffff:127.0.0.1]:50719
+TpTrace Verbose: 0 : 20049, 5, 2024/06/06, 17:14:19.710, 21596869290041, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:50718 localEndPoint: [::ffff:127.0.0.1]:50719
+TpTrace Verbose: 0 : 20049, 5, 2024/06/06, 17:14:20.711, 21597870392666, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:50718 localEndPoint: [::ffff:127.0.0.1]:50719
+TpTrace Verbose: 0 : 20049, 5, 2024/06/06, 17:14:21.713, 21598872152500, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:50718 localEndPoint: [::ffff:127.0.0.1]:50719
+TpTrace Verbose: 0 : 20049, 5, 2024/06/06, 17:14:22.714, 21599873575791, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:50718 localEndPoint: [::ffff:127.0.0.1]:50719
+TpTrace Verbose: 0 : 20049, 5, 2024/06/06, 17:14:23.717, 21600876166750, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:50718 localEndPoint: [::ffff:127.0.0.1]:50719
+TpTrace Verbose: 0 : 20049, 5, 2024/06/06, 17:14:24.718, 21601877609708, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:50718 localEndPoint: [::ffff:127.0.0.1]:50719
+TpTrace Verbose: 0 : 20049, 5, 2024/06/06, 17:14:25.720, 21602879392166, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:50718 localEndPoint: [::ffff:127.0.0.1]:50719
+TpTrace Verbose: 0 : 20049, 5, 2024/06/06, 17:14:26.722, 21603881359666, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:50718 localEndPoint: [::ffff:127.0.0.1]:50719
+TpTrace Information: 0 : 20049, 14, 2024/06/06, 17:14:27.677, 21604835987000, testhost.dll, Given I am on document page with clean document
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"I am on document page with clean document")]
+        public void GivenIAmOnDocumentPageWithCleanDocument()
+        {
+            _scenarioContext.Pending();
+        }
+
+When I type hello world!
+-> No matching step definition found for the step. Use the following code to create one:
+        [When(@"I type hello world!")]
+        public void WhenITypeHelloWorld()
+        {
+            _scenarioContext.Pending();
+        }
+
+Then hello world! is displayed
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"hello world! is displayed")]
+        public void ThenHelloWorldIsDisplayed()
+        {
+            _scenarioContext.Pending();
+        }
+
+
+TpTrace Verbose: 0 : 20049, 14, 2024/06/06, 17:14:27.677, 21604836181833, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"Given I am on document page with clean document\n-> No matching step definition found for the step. Use the following code to create one:\n        [Given(@\"I am on document page with clean document\")]\n        public void GivenIAmOnDocumentPageWithCleanDocument()\n        {\n            _scenarioContext.Pending();\n        }\n\nWhen I type hello world!\n-> No matching step definition found for the step. Use the following code to create one:\n        [When(@\"I type hello world!\")]\n        public void WhenITypeHelloWorld()\n        {\n            _scenarioContext.Pending();\n        }\n\nThen hello world! is displayed\n-> No matching step definition found for the step. Use the following code to create one:\n        [Then(@\"hello world! is displayed\")]\n        public void ThenHelloWorldIsDisplayed()\n        {\n            _scenarioContext.Pending();\n        }\n\n"}}
+TpTrace Verbose: 0 : 20049, 14, 2024/06/06, 17:14:27.677, 21604836356958, testhost.dll, TestExecutionRecorder.RecordEnd: test: WordPadTesting.Features.TypeTextFeature.CheckTextContent("hello world!",null) execution completed.
+TpTrace Warning: 0 : 20049, 14, 2024/06/06, 17:14:27.677, 21604836607166, testhost.dll, InProgressTests is null
+TpTrace Verbose: 0 : 20049, 14, 2024/06/06, 17:14:27.678, 21604836855041, testhost.dll, TestExecutionRecorder.RecordResult: Received result for test: WordPadTesting.Features.TypeTextFeature.CheckTextContent("hello world!",null).
+TpTrace Warning: 0 : 20049, 14, 2024/06/06, 17:14:27.679, 21604837756041, testhost.dll, InProgressTests is null
+TpTrace Warning: 0 : 20049, 14, 2024/06/06, 17:14:27.679, 21604838553916, testhost.dll, TestRunCache: No test found corresponding to testResult 'CheckTextContent("hello world!",null)  Failed
+  Message: No matching step definition found for one or more steps.
+using System;
+using TechTalk.SpecFlow;
+
+namespace MyNamespace
+{
+    [Binding]
+    public class StepDefinitions
+    {
+        private readonly ScenarioContext _scenarioContext;
+
+        public StepDefinitions(ScenarioContext scenarioContext)
+        {
+            _scenarioContext = scenarioContext;
+        }
+        [Given(@"I am on document page with clean document")]
+        public void GivenIAmOnDocumentPageWithCleanDocument()
+        {
+            _scenarioContext.Pending();
+        }
+        
+        [When(@"I type hello world!")]
+        public void WhenITypeHelloWorld()
+        {
+            _scenarioContext.Pending();
+        }
+        
+        [Then(@"hello world! is displayed")]
+        public void ThenHelloWorldIsDisplayed()
+        {
+            _scenarioContext.Pending();
+        }
+    }
+}
+
+TearDown : OpenQA.Selenium.WebDriverException : Currently selected window has been closed
+  StackTrace:
+   at TechTalk.SpecFlow.NUnit.SpecFlowPlugin.NUnitRuntimeProvider.TestInconclusive(String message)
+   at TechTalk.SpecFlow.NUnit.SpecFlowPlugin.NUnitRuntimeProvider.TestPending(String message)
+   at TechTalk.SpecFlow.ErrorHandling.ErrorProvider.ThrowPendingError(ScenarioExecutionStatus testStatus, String message)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at WordPadTesting.Features.TypeTextFeature.ScenarioCleanup()
+   at WordPadTesting.Features.TypeTextFeature.CheckTextContent(String text, String[] exampleTags) in /Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/Features/type_text.feature:line 5
+
+--TearDown
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Appium.AppiumDriver`1.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Appium.AppiumDriver`1.FindElementByName(String name)
+   at WordPadTesting.Hooks.Hooks.TearDown() in /Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/Hooks/Hook.cs:line 30
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType hookType)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireScenarioEvents(HookType bindingEvent)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnScenarioEnd()
+   at TechTalk.SpecFlow.TestRunner.OnScenarioEnd()
+   at WordPadTesting.Features.TypeTextFeature.TestTearDown()
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+  Test Messages:
+  StdOutMsgs:
+Given I am on document page with clean document
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"I am on document page with clean document")]
+        public void GivenIAmOnDocumentPageWithCleanDocument()
+        {
+            _scenarioContext.Pending();
+        }
+
+When I type hello world!
+-> No matching step definition found for the step. Use the following code to create one:
+        [When(@"I type hello world!")]
+        public void WhenITypeHelloWorld()
+        {
+            _scenarioContext.Pending();
+        }
+
+Then hello world! is displayed
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"hello world! is displayed")]
+        public void ThenHelloWorldIsDisplayed()
+        {
+            _scenarioContext.Pending();
+        }
+
+' in inProgress list.
+TpTrace Verbose: 0 : 20049, 14, 2024/06/06, 17:14:27.679, 21604838687291, testhost.dll, TestExecutionRecorder.RecordStart: Starting test: WordPadTesting.Features.TypeTextFeature.CheckTextContent("good bye",null).
+TpTrace Information: 0 : 20049, 14, 2024/06/06, 17:14:27.680, 21604838825708, testhost.dll, Sending test run statistics
+TpTrace Verbose: 0 : 20049, 14, 2024/06/06, 17:14:27.684, 21604843210208, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.StatsChange","Payload":{"NewTestResults":[{"TestCase":{"Id":"a1c3a866-d017-c3e5-4f5e-130dc7fca386","FullyQualifiedName":"WordPadTesting.Features.TypeTextFeature.CheckTextContent(\"hello world!\",null)","DisplayName":"CheckTextContent(\"hello world!\",null)","ExecutorUri":"executor://NUnit3TestExecutor","Source":"/Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/bin/Debug/net8.0/WordPadTesting.dll","CodeFilePath":null,"LineNumber":0,"Properties":[]},"Attachments":[],"Outcome":2,"ErrorMessage":"No matching step definition found for one or more steps.\nusing System;\nusing TechTalk.SpecFlow;\n\nnamespace MyNamespace\n{\n    [Binding]\n    public class StepDefinitions\n    {\n        private readonly ScenarioContext _scenarioContext;\n\n        public StepDefinitions(ScenarioContext scenarioContext)\n        {\n            _scenarioContext = scenarioContext;\n        }\n        [Given(@\"I am on document page with clean document\")]\n        public void GivenIAmOnDocumentPageWithCleanDocument()\n        {\n            _scenarioContext.Pending();\n        }\n        \n        [When(@\"I type hello world!\")]\n        public void WhenITypeHelloWorld()\n        {\n            _scenarioContext.Pending();\n        }\n        \n        [Then(@\"hello world! is displayed\")]\n        public void ThenHelloWorldIsDisplayed()\n        {\n            _scenarioContext.Pending();\n        }\n    }\n}\n\nTearDown : OpenQA.Selenium.WebDriverException : Currently selected window has been closed","ErrorStackTrace":"   at TechTalk.SpecFlow.NUnit.SpecFlowPlugin.NUnitRuntimeProvider.TestInconclusive(String message)\n   at TechTalk.SpecFlow.NUnit.SpecFlowPlugin.NUnitRuntimeProvider.TestPending(String message)\n   at TechTalk.SpecFlow.ErrorHandling.ErrorProvider.ThrowPendingError(ScenarioExecutionStatus testStatus, String message)\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()\n   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()\n   at WordPadTesting.Features.TypeTextFeature.ScenarioCleanup()\n   at WordPadTesting.Features.TypeTextFeature.CheckTextContent(String text, String[] exampleTags) in /Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/Features/type_text.feature:line 5\n\n--TearDown\n   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.Appium.AppiumDriver`1.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)\n   at OpenQA.Selenium.Appium.AppiumDriver`1.FindElementByName(String name)\n   at WordPadTesting.Hooks.Hooks.TearDown() in /Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/Hooks/Hook.cs:line 30\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType hookType)\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireScenarioEvents(HookType bindingEvent)\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnScenarioEnd()\n   at TechTalk.SpecFlow.TestRunner.OnScenarioEnd()\n   at WordPadTesting.Features.TypeTextFeature.TestTearDown()\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)","DisplayName":"CheckTextContent(\"hello world!\",null)","Messages":[{"Category":"StdOutMsgs","Text":"Given I am on document page with clean document\n-> No matching step definition found for the step. Use the following code to create one:\n        [Given(@\"I am on document page with clean document\")]\n        public void GivenIAmOnDocumentPageWithCleanDocument()\n        {\n            _scenarioContext.Pending();\n        }\n\nWhen I type hello world!\n-> No matching step definition found for the step. Use the following code to create one:\n        [When(@\"I type hello world!\")]\n        public void WhenITypeHelloWorld()\n        {\n            _scenarioContext.Pending();\n        }\n\nThen hello world! is displayed\n-> No matching step definition found for the step. Use the following code to create one:\n        [Then(@\"hello world! is displayed\")]\n        public void ThenHelloWorldIsDisplayed()\n        {\n            _scenarioContext.Pending();\n        }\n\n"}],"ComputerName":"Anatoliis-MacBook-Pro","Duration":"00:00:11.4424730","StartTime":"2024-06-06T14:14:16.216603+00:00","EndTime":"2024-06-06T14:14:27.659018+00:00","Properties":[]}],"TestRunStatistics":{"ExecutedTests":1,"Stats":{"Failed":1}},"ActiveTests":[{"Id":"1fed7942-8f50-9d2f-694e-bca521debd4b","FullyQualifiedName":"WordPadTesting.Features.TypeTextFeature.CheckTextContent(\"good bye\",null)","DisplayName":"CheckTextContent(\"good bye\",null)","ExecutorUri":"executor://NUnit3TestExecutor","Source":"/Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/bin/Debug/net8.0/WordPadTesting.dll","CodeFilePath":null,"LineNumber":0,"Properties":[]}]}}
+TpTrace Verbose: 0 : 20049, 14, 2024/06/06, 17:14:27.684, 21604843313625, testhost.dll, TestRunCache: OnNewTestResult: Notified the onCacheHit callback.
+TpTrace Verbose: 0 : 20049, 5, 2024/06/06, 17:14:27.724, 21604883218166, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:50718 localEndPoint: [::ffff:127.0.0.1]:50719
+TpTrace Verbose: 0 : 20049, 5, 2024/06/06, 17:14:28.724, 21605883637625, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:50718 localEndPoint: [::ffff:127.0.0.1]:50719
+TpTrace Verbose: 0 : 20049, 5, 2024/06/06, 17:14:29.726, 21606884976208, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:50718 localEndPoint: [::ffff:127.0.0.1]:50719
+TpTrace Verbose: 0 : 20049, 5, 2024/06/06, 17:14:30.727, 21607886519708, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:50718 localEndPoint: [::ffff:127.0.0.1]:50719
+TpTrace Verbose: 0 : 20049, 5, 2024/06/06, 17:14:31.729, 21608888034750, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:50718 localEndPoint: [::ffff:127.0.0.1]:50719
+TpTrace Verbose: 0 : 20049, 5, 2024/06/06, 17:14:32.730, 21609889734458, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:50718 localEndPoint: [::ffff:127.0.0.1]:50719
+TpTrace Verbose: 0 : 20049, 5, 2024/06/06, 17:14:33.731, 21610890753916, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:50718 localEndPoint: [::ffff:127.0.0.1]:50719
+TpTrace Verbose: 0 : 20049, 5, 2024/06/06, 17:14:34.733, 21611892001333, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:50718 localEndPoint: [::ffff:127.0.0.1]:50719
+TpTrace Verbose: 0 : 20049, 5, 2024/06/06, 17:14:35.734, 21612893528791, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:50718 localEndPoint: [::ffff:127.0.0.1]:50719
+TpTrace Verbose: 0 : 20049, 5, 2024/06/06, 17:14:36.736, 21613894985666, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:50718 localEndPoint: [::ffff:127.0.0.1]:50719
+TpTrace Verbose: 0 : 20049, 5, 2024/06/06, 17:14:37.737, 21614896473458, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:50718 localEndPoint: [::ffff:127.0.0.1]:50719
+TpTrace Verbose: 0 : 20049, 5, 2024/06/06, 17:14:38.741, 21615899815250, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:50718 localEndPoint: [::ffff:127.0.0.1]:50719
+TpTrace Information: 0 : 20049, 14, 2024/06/06, 17:14:38.914, 21616073511083, testhost.dll, Given I am on document page with clean document
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"I am on document page with clean document")]
+        public void GivenIAmOnDocumentPageWithCleanDocument()
+        {
+            _scenarioContext.Pending();
+        }
+
+When I type good bye
+-> No matching step definition found for the step. Use the following code to create one:
+        [When(@"I type good bye")]
+        public void WhenITypeGoodBye()
+        {
+            _scenarioContext.Pending();
+        }
+
+Then good bye is displayed
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"good bye is displayed")]
+        public void ThenGoodByeIsDisplayed()
+        {
+            _scenarioContext.Pending();
+        }
+
+
+TpTrace Verbose: 0 : 20049, 14, 2024/06/06, 17:14:38.915, 21616073830000, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"Given I am on document page with clean document\n-> No matching step definition found for the step. Use the following code to create one:\n        [Given(@\"I am on document page with clean document\")]\n        public void GivenIAmOnDocumentPageWithCleanDocument()\n        {\n            _scenarioContext.Pending();\n        }\n\nWhen I type good bye\n-> No matching step definition found for the step. Use the following code to create one:\n        [When(@\"I type good bye\")]\n        public void WhenITypeGoodBye()\n        {\n            _scenarioContext.Pending();\n        }\n\nThen good bye is displayed\n-> No matching step definition found for the step. Use the following code to create one:\n        [Then(@\"good bye is displayed\")]\n        public void ThenGoodByeIsDisplayed()\n        {\n            _scenarioContext.Pending();\n        }\n\n"}}
+TpTrace Verbose: 0 : 20049, 14, 2024/06/06, 17:14:38.915, 21616073979208, testhost.dll, TestExecutionRecorder.RecordEnd: test: WordPadTesting.Features.TypeTextFeature.CheckTextContent("good bye",null) execution completed.
+TpTrace Warning: 0 : 20049, 14, 2024/06/06, 17:14:38.915, 21616074010625, testhost.dll, InProgressTests is null
+TpTrace Verbose: 0 : 20049, 14, 2024/06/06, 17:14:38.915, 21616074039041, testhost.dll, TestExecutionRecorder.RecordResult: Received result for test: WordPadTesting.Features.TypeTextFeature.CheckTextContent("good bye",null).
+TpTrace Warning: 0 : 20049, 14, 2024/06/06, 17:14:38.915, 21616074590125, testhost.dll, InProgressTests is null
+TpTrace Warning: 0 : 20049, 14, 2024/06/06, 17:14:38.915, 21616074648666, testhost.dll, TestRunCache: No test found corresponding to testResult 'CheckTextContent("good bye",null)  Failed
+  Message: No matching step definition found for one or more steps.
+using System;
+using TechTalk.SpecFlow;
+
+namespace MyNamespace
+{
+    [Binding]
+    public class StepDefinitions
+    {
+        private readonly ScenarioContext _scenarioContext;
+
+        public StepDefinitions(ScenarioContext scenarioContext)
+        {
+            _scenarioContext = scenarioContext;
+        }
+        [Given(@"I am on document page with clean document")]
+        public void GivenIAmOnDocumentPageWithCleanDocument()
+        {
+            _scenarioContext.Pending();
+        }
+        
+        [When(@"I type good bye")]
+        public void WhenITypeGoodBye()
+        {
+            _scenarioContext.Pending();
+        }
+        
+        [Then(@"good bye is displayed")]
+        public void ThenGoodByeIsDisplayed()
+        {
+            _scenarioContext.Pending();
+        }
+    }
+}
+
+TearDown : OpenQA.Selenium.WebDriverException : Currently selected window has been closed
+  StackTrace:
+   at TechTalk.SpecFlow.NUnit.SpecFlowPlugin.NUnitRuntimeProvider.TestInconclusive(String message)
+   at TechTalk.SpecFlow.NUnit.SpecFlowPlugin.NUnitRuntimeProvider.TestPending(String message)
+   at TechTalk.SpecFlow.ErrorHandling.ErrorProvider.ThrowPendingError(ScenarioExecutionStatus testStatus, String message)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at WordPadTesting.Features.TypeTextFeature.ScenarioCleanup()
+   at WordPadTesting.Features.TypeTextFeature.CheckTextContent(String text, String[] exampleTags) in /Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/Features/type_text.feature:line 5
+   at InvokeStub_TypeTextFeature.CheckTextContent(Object, Span`1)
+
+--TearDown
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Appium.AppiumDriver`1.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Appium.AppiumDriver`1.FindElementByName(String name)
+   at WordPadTesting.Hooks.Hooks.TearDown() in /Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/Hooks/Hook.cs:line 30
+   at InvokeStub_Action`1.Invoke(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType hookType)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireScenarioEvents(HookType bindingEvent)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnScenarioEnd()
+   at TechTalk.SpecFlow.TestRunner.OnScenarioEnd()
+   at WordPadTesting.Features.TypeTextFeature.TestTearDown()
+   at InvokeStub_TypeTextFeature.TestTearDown(Object, Object, IntPtr*)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+  Test Messages:
+  StdOutMsgs:
+Given I am on document page with clean document
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"I am on document page with clean document")]
+        public void GivenIAmOnDocumentPageWithCleanDocument()
+        {
+            _scenarioContext.Pending();
+        }
+
+When I type good bye
+-> No matching step definition found for the step. Use the following code to create one:
+        [When(@"I type good bye")]
+        public void WhenITypeGoodBye()
+        {
+            _scenarioContext.Pending();
+        }
+
+Then good bye is displayed
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"good bye is displayed")]
+        public void ThenGoodByeIsDisplayed()
+        {
+            _scenarioContext.Pending();
+        }
+
+' in inProgress list.
+TpTrace Verbose: 0 : 20049, 14, 2024/06/06, 17:14:38.916, 21616074781333, testhost.dll, TestExecutionRecorder.RecordStart: Starting test: WordPadTesting.Features.TypeTextFeature.CheckTextContent("Hello",null).
+TpTrace Information: 0 : 20049, 14, 2024/06/06, 17:14:38.916, 21616074813916, testhost.dll, Sending test run statistics
+TpTrace Verbose: 0 : 20049, 14, 2024/06/06, 17:14:38.916, 21616075417083, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.StatsChange","Payload":{"NewTestResults":[{"TestCase":{"Id":"1fed7942-8f50-9d2f-694e-bca521debd4b","FullyQualifiedName":"WordPadTesting.Features.TypeTextFeature.CheckTextContent(\"good bye\",null)","DisplayName":"CheckTextContent(\"good bye\",null)","ExecutorUri":"executor://NUnit3TestExecutor","Source":"/Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/bin/Debug/net8.0/WordPadTesting.dll","CodeFilePath":null,"LineNumber":0,"Properties":[]},"Attachments":[],"Outcome":2,"ErrorMessage":"No matching step definition found for one or more steps.\nusing System;\nusing TechTalk.SpecFlow;\n\nnamespace MyNamespace\n{\n    [Binding]\n    public class StepDefinitions\n    {\n        private readonly ScenarioContext _scenarioContext;\n\n        public StepDefinitions(ScenarioContext scenarioContext)\n        {\n            _scenarioContext = scenarioContext;\n        }\n        [Given(@\"I am on document page with clean document\")]\n        public void GivenIAmOnDocumentPageWithCleanDocument()\n        {\n            _scenarioContext.Pending();\n        }\n        \n        [When(@\"I type good bye\")]\n        public void WhenITypeGoodBye()\n        {\n            _scenarioContext.Pending();\n        }\n        \n        [Then(@\"good bye is displayed\")]\n        public void ThenGoodByeIsDisplayed()\n        {\n            _scenarioContext.Pending();\n        }\n    }\n}\n\nTearDown : OpenQA.Selenium.WebDriverException : Currently selected window has been closed","ErrorStackTrace":"   at TechTalk.SpecFlow.NUnit.SpecFlowPlugin.NUnitRuntimeProvider.TestInconclusive(String message)\n   at TechTalk.SpecFlow.NUnit.SpecFlowPlugin.NUnitRuntimeProvider.TestPending(String message)\n   at TechTalk.SpecFlow.ErrorHandling.ErrorProvider.ThrowPendingError(ScenarioExecutionStatus testStatus, String message)\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()\n   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()\n   at WordPadTesting.Features.TypeTextFeature.ScenarioCleanup()\n   at WordPadTesting.Features.TypeTextFeature.CheckTextContent(String text, String[] exampleTags) in /Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/Features/type_text.feature:line 5\n   at InvokeStub_TypeTextFeature.CheckTextContent(Object, Span`1)\n\n--TearDown\n   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.Appium.AppiumDriver`1.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)\n   at OpenQA.Selenium.Appium.AppiumDriver`1.FindElementByName(String name)\n   at WordPadTesting.Hooks.Hooks.TearDown() in /Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/Hooks/Hook.cs:line 30\n   at InvokeStub_Action`1.Invoke(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType hookType)\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireScenarioEvents(HookType bindingEvent)\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnScenarioEnd()\n   at TechTalk.SpecFlow.TestRunner.OnScenarioEnd()\n   at WordPadTesting.Features.TypeTextFeature.TestTearDown()\n   at InvokeStub_TypeTextFeature.TestTearDown(Object, Object, IntPtr*)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)","DisplayName":"CheckTextContent(\"good bye\",null)","Messages":[{"Category":"StdOutMsgs","Text":"Given I am on document page with clean document\n-> No matching step definition found for the step. Use the following code to create one:\n        [Given(@\"I am on document page with clean document\")]\n        public void GivenIAmOnDocumentPageWithCleanDocument()\n        {\n            _scenarioContext.Pending();\n        }\n\nWhen I type good bye\n-> No matching step definition found for the step. Use the following code to create one:\n        [When(@\"I type good bye\")]\n        public void WhenITypeGoodBye()\n        {\n            _scenarioContext.Pending();\n        }\n\nThen good bye is displayed\n-> No matching step definition found for the step. Use the following code to create one:\n        [Then(@\"good bye is displayed\")]\n        public void ThenGoodByeIsDisplayed()\n        {\n            _scenarioContext.Pending();\n        }\n\n"}],"ComputerName":"Anatoliis-MacBook-Pro","Duration":"00:00:11.2541660","StartTime":"2024-06-06T14:14:27.659577+00:00","EndTime":"2024-06-06T14:14:38.913688+00:00","Properties":[]}],"TestRunStatistics":{"ExecutedTests":2,"Stats":{"Failed":2}},"ActiveTests":[{"Id":"8246fb47-091d-ca7d-226f-e3a68d2c2a24","FullyQualifiedName":"WordPadTesting.Features.TypeTextFeature.CheckTextContent(\"Hello\",null)","DisplayName":"CheckTextContent(\"Hello\",null)","ExecutorUri":"executor://NUnit3TestExecutor","Source":"/Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/bin/Debug/net8.0/WordPadTesting.dll","CodeFilePath":null,"LineNumber":0,"Properties":[]}]}}
+TpTrace Verbose: 0 : 20049, 14, 2024/06/06, 17:14:38.916, 21616075562458, testhost.dll, TestRunCache: OnNewTestResult: Notified the onCacheHit callback.
+TpTrace Verbose: 0 : 20049, 5, 2024/06/06, 17:14:39.742, 21616901305583, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:50718 localEndPoint: [::ffff:127.0.0.1]:50719
+TpTrace Verbose: 0 : 20049, 5, 2024/06/06, 17:14:40.744, 21617903197458, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:50718 localEndPoint: [::ffff:127.0.0.1]:50719
+TpTrace Verbose: 0 : 20049, 5, 2024/06/06, 17:14:41.745, 21618904495166, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:50718 localEndPoint: [::ffff:127.0.0.1]:50719
+TpTrace Verbose: 0 : 20049, 5, 2024/06/06, 17:14:42.747, 21619905832250, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:50718 localEndPoint: [::ffff:127.0.0.1]:50719
+TpTrace Verbose: 0 : 20049, 5, 2024/06/06, 17:14:43.748, 21620907679500, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:50718 localEndPoint: [::ffff:127.0.0.1]:50719
+TpTrace Verbose: 0 : 20049, 5, 2024/06/06, 17:14:44.750, 21621909519625, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:50718 localEndPoint: [::ffff:127.0.0.1]:50719
+TpTrace Verbose: 0 : 20049, 5, 2024/06/06, 17:14:45.752, 21622911130083, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:50718 localEndPoint: [::ffff:127.0.0.1]:50719
+TpTrace Verbose: 0 : 20049, 5, 2024/06/06, 17:14:46.753, 21623912726708, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:50718 localEndPoint: [::ffff:127.0.0.1]:50719
+TpTrace Verbose: 0 : 20049, 5, 2024/06/06, 17:14:47.755, 21624914368083, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:50718 localEndPoint: [::ffff:127.0.0.1]:50719
+TpTrace Verbose: 0 : 20049, 5, 2024/06/06, 17:14:48.756, 21625915498791, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:50718 localEndPoint: [::ffff:127.0.0.1]:50719
+TpTrace Verbose: 0 : 20049, 5, 2024/06/06, 17:14:49.758, 21626916882500, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:50718 localEndPoint: [::ffff:127.0.0.1]:50719
+TpTrace Verbose: 0 : 20049, 5, 2024/06/06, 17:14:50.759, 21627918430166, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:50718 localEndPoint: [::ffff:127.0.0.1]:50719
+TpTrace Verbose: 0 : 20049, 5, 2024/06/06, 17:14:51.761, 21628919884041, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:50718 localEndPoint: [::ffff:127.0.0.1]:50719
+TpTrace Verbose: 0 : 20049, 5, 2024/06/06, 17:14:52.762, 21629921211500, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:50718 localEndPoint: [::ffff:127.0.0.1]:50719
+TpTrace Verbose: 0 : 20049, 5, 2024/06/06, 17:14:53.763, 21630922499750, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:50718 localEndPoint: [::ffff:127.0.0.1]:50719
+TpTrace Verbose: 0 : 20049, 5, 2024/06/06, 17:14:54.764, 21631923710958, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:50718 localEndPoint: [::ffff:127.0.0.1]:50719
+TpTrace Verbose: 0 : 20049, 5, 2024/06/06, 17:14:55.766, 21632924898041, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:50718 localEndPoint: [::ffff:127.0.0.1]:50719
+TpTrace Verbose: 0 : 20049, 5, 2024/06/06, 17:14:56.767, 21633926166666, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:50718 localEndPoint: [::ffff:127.0.0.1]:50719
+TpTrace Verbose: 0 : 20049, 5, 2024/06/06, 17:14:57.768, 21634927531666, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:50718 localEndPoint: [::ffff:127.0.0.1]:50719
+TpTrace Verbose: 0 : 20049, 5, 2024/06/06, 17:14:58.769, 21635928768541, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:50718 localEndPoint: [::ffff:127.0.0.1]:50719
+TpTrace Verbose: 0 : 20049, 5, 2024/06/06, 17:14:59.771, 21636930108791, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:50718 localEndPoint: [::ffff:127.0.0.1]:50719
+TpTrace Verbose: 0 : 20049, 5, 2024/06/06, 17:15:00.772, 21637931335750, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:50718 localEndPoint: [::ffff:127.0.0.1]:50719
+TpTrace Verbose: 0 : 20049, 5, 2024/06/06, 17:15:01.773, 21638932814208, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:50718 localEndPoint: [::ffff:127.0.0.1]:50719
+TpTrace Verbose: 0 : 20049, 5, 2024/06/06, 17:15:02.776, 21639935736875, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:50718 localEndPoint: [::ffff:127.0.0.1]:50719
+TpTrace Information: 0 : 20049, 14, 2024/06/06, 17:15:03.492, 21640651245916, testhost.dll, Given I am on document page with clean document
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"I am on document page with clean document")]
+        public void GivenIAmOnDocumentPageWithCleanDocument()
+        {
+            _scenarioContext.Pending();
+        }
+
+When I type Hello
+-> No matching step definition found for the step. Use the following code to create one:
+        [When(@"I type Hello")]
+        public void WhenITypeHello()
+        {
+            _scenarioContext.Pending();
+        }
+
+Then Hello is displayed
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"Hello is displayed")]
+        public void ThenHelloIsDisplayed()
+        {
+            _scenarioContext.Pending();
+        }
+
+
+TpTrace Verbose: 0 : 20049, 14, 2024/06/06, 17:15:03.492, 21640651575375, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"Given I am on document page with clean document\n-> No matching step definition found for the step. Use the following code to create one:\n        [Given(@\"I am on document page with clean document\")]\n        public void GivenIAmOnDocumentPageWithCleanDocument()\n        {\n            _scenarioContext.Pending();\n        }\n\nWhen I type Hello\n-> No matching step definition found for the step. Use the following code to create one:\n        [When(@\"I type Hello\")]\n        public void WhenITypeHello()\n        {\n            _scenarioContext.Pending();\n        }\n\nThen Hello is displayed\n-> No matching step definition found for the step. Use the following code to create one:\n        [Then(@\"Hello is displayed\")]\n        public void ThenHelloIsDisplayed()\n        {\n            _scenarioContext.Pending();\n        }\n\n"}}
+TpTrace Verbose: 0 : 20049, 14, 2024/06/06, 17:15:03.492, 21640651730625, testhost.dll, TestExecutionRecorder.RecordEnd: test: WordPadTesting.Features.TypeTextFeature.CheckTextContent("Hello",null) execution completed.
+TpTrace Warning: 0 : 20049, 14, 2024/06/06, 17:15:03.492, 21640651758166, testhost.dll, InProgressTests is null
+TpTrace Verbose: 0 : 20049, 14, 2024/06/06, 17:15:03.492, 21640651779375, testhost.dll, TestExecutionRecorder.RecordResult: Received result for test: WordPadTesting.Features.TypeTextFeature.CheckTextContent("Hello",null).
+TpTrace Warning: 0 : 20049, 14, 2024/06/06, 17:15:03.492, 21640651805083, testhost.dll, InProgressTests is null
+TpTrace Warning: 0 : 20049, 14, 2024/06/06, 17:15:03.492, 21640651856583, testhost.dll, TestRunCache: No test found corresponding to testResult 'CheckTextContent("Hello",null)  Failed
+  Message: No matching step definition found for one or more steps.
+using System;
+using TechTalk.SpecFlow;
+
+namespace MyNamespace
+{
+    [Binding]
+    public class StepDefinitions
+    {
+        private readonly ScenarioContext _scenarioContext;
+
+        public StepDefinitions(ScenarioContext scenarioContext)
+        {
+            _scenarioContext = scenarioContext;
+        }
+        [Given(@"I am on document page with clean document")]
+        public void GivenIAmOnDocumentPageWithCleanDocument()
+        {
+            _scenarioContext.Pending();
+        }
+        
+        [When(@"I type Hello")]
+        public void WhenITypeHello()
+        {
+            _scenarioContext.Pending();
+        }
+        
+        [Then(@"Hello is displayed")]
+        public void ThenHelloIsDisplayed()
+        {
+            _scenarioContext.Pending();
+        }
+    }
+}
+
+TearDown : OpenQA.Selenium.WebDriverException : An element could not be located on the page using the given search parameters.
+  StackTrace:
+   at TechTalk.SpecFlow.NUnit.SpecFlowPlugin.NUnitRuntimeProvider.TestInconclusive(String message)
+   at TechTalk.SpecFlow.NUnit.SpecFlowPlugin.NUnitRuntimeProvider.TestPending(String message)
+   at TechTalk.SpecFlow.ErrorHandling.ErrorProvider.ThrowPendingError(ScenarioExecutionStatus testStatus, String message)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at WordPadTesting.Features.TypeTextFeature.ScenarioCleanup()
+   at WordPadTesting.Features.TypeTextFeature.CheckTextContent(String text, String[] exampleTags) in /Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/Features/type_text.feature:line 5
+   at InvokeStub_TypeTextFeature.CheckTextContent(Object, Span`1)
+
+--TearDown
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Appium.AppiumDriver`1.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Appium.AppiumDriver`1.FindElementByName(String name)
+   at WordPadTesting.Hooks.Hooks.TearDown() in /Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/Hooks/Hook.cs:line 30
+   at InvokeStub_Action`1.Invoke(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType hookType)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireScenarioEvents(HookType bindingEvent)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnScenarioEnd()
+   at TechTalk.SpecFlow.TestRunner.OnScenarioEnd()
+   at WordPadTesting.Features.TypeTextFeature.TestTearDown()
+   at InvokeStub_TypeTextFeature.TestTearDown(Object, Object, IntPtr*)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+  Test Messages:
+  StdOutMsgs:
+Given I am on document page with clean document
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"I am on document page with clean document")]
+        public void GivenIAmOnDocumentPageWithCleanDocument()
+        {
+            _scenarioContext.Pending();
+        }
+
+When I type Hello
+-> No matching step definition found for the step. Use the following code to create one:
+        [When(@"I type Hello")]
+        public void WhenITypeHello()
+        {
+            _scenarioContext.Pending();
+        }
+
+Then Hello is displayed
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"Hello is displayed")]
+        public void ThenHelloIsDisplayed()
+        {
+            _scenarioContext.Pending();
+        }
+
+' in inProgress list.
+TpTrace Warning: 0 : 20049, 14, 2024/06/06, 17:15:03.495, 21640654058458, testhost.dll, Setup failed for test fixture WordPadTesting.Steps.WordPadStepDefinitions
+TpTrace Verbose: 0 : 20049, 14, 2024/06/06, 17:15:03.495, 21640654161750, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestSession.Message","Payload":{"MessageLevel":1,"Message":"Setup failed for test fixture WordPadTesting.Steps.WordPadStepDefinitions"}}
+TpTrace Warning: 0 : 20049, 14, 2024/06/06, 17:15:03.495, 21640654379333, testhost.dll, No suitable constructor was found
+TpTrace Verbose: 0 : 20049, 14, 2024/06/06, 17:15:03.495, 21640654462958, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestSession.Message","Payload":{"MessageLevel":1,"Message":"No suitable constructor was found"}}
+TpTrace Verbose: 0 : 20049, 5, 2024/06/06, 17:15:03.777, 21640936499958, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:50718 localEndPoint: [::ffff:127.0.0.1]:50719
+TpTrace Information: 0 : 20049, 4, 2024/06/06, 17:15:04.067, 21641225921541, testhost.dll, NUnit Adapter 3.17.0.0: Test execution complete
+TpTrace Verbose: 0 : 20049, 4, 2024/06/06, 17:15:04.067, 21641226104666, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"NUnit Adapter 3.17.0.0: Test execution complete"}}
+TpTrace Verbose: 0 : 20049, 4, 2024/06/06, 17:15:04.070, 21641229074000, testhost.dll, BaseRunTests.RunTestInternalWithExecutors: Completed running tests for executor://NUnit3TestExecutor
+TpTrace Information: 0 : 20049, 4, 2024/06/06, 17:15:04.072, 21641231101125, testhost.dll, Sending test run complete
+TpTrace Verbose: 0 : 20049, 4, 2024/06/06, 17:15:04.079, 21641238729041, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.Completed","Payload":{"TestRunCompleteArgs":{"TestRunStatistics":{"ExecutedTests":3,"Stats":{"Failed":3}},"IsCanceled":false,"IsAborted":false,"Error":null,"AttachmentSets":[],"ElapsedTimeInRunningTests":"00:00:49.3330409","Metrics":{}},"LastRunTests":{"NewTestResults":[{"TestCase":{"Id":"8246fb47-091d-ca7d-226f-e3a68d2c2a24","FullyQualifiedName":"WordPadTesting.Features.TypeTextFeature.CheckTextContent(\"Hello\",null)","DisplayName":"CheckTextContent(\"Hello\",null)","ExecutorUri":"executor://NUnit3TestExecutor","Source":"/Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/bin/Debug/net8.0/WordPadTesting.dll","CodeFilePath":null,"LineNumber":0,"Properties":[]},"Attachments":[],"Outcome":2,"ErrorMessage":"No matching step definition found for one or more steps.\nusing System;\nusing TechTalk.SpecFlow;\n\nnamespace MyNamespace\n{\n    [Binding]\n    public class StepDefinitions\n    {\n        private readonly ScenarioContext _scenarioContext;\n\n        public StepDefinitions(ScenarioContext scenarioContext)\n        {\n            _scenarioContext = scenarioContext;\n        }\n        [Given(@\"I am on document page with clean document\")]\n        public void GivenIAmOnDocumentPageWithCleanDocument()\n        {\n            _scenarioContext.Pending();\n        }\n        \n        [When(@\"I type Hello\")]\n        public void WhenITypeHello()\n        {\n            _scenarioContext.Pending();\n        }\n        \n        [Then(@\"Hello is displayed\")]\n        public void ThenHelloIsDisplayed()\n        {\n            _scenarioContext.Pending();\n        }\n    }\n}\n\nTearDown : OpenQA.Selenium.WebDriverException : An element could not be located on the page using the given search parameters.","ErrorStackTrace":"   at TechTalk.SpecFlow.NUnit.SpecFlowPlugin.NUnitRuntimeProvider.TestInconclusive(String message)\n   at TechTalk.SpecFlow.NUnit.SpecFlowPlugin.NUnitRuntimeProvider.TestPending(String message)\n   at TechTalk.SpecFlow.ErrorHandling.ErrorProvider.ThrowPendingError(ScenarioExecutionStatus testStatus, String message)\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()\n   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()\n   at WordPadTesting.Features.TypeTextFeature.ScenarioCleanup()\n   at WordPadTesting.Features.TypeTextFeature.CheckTextContent(String text, String[] exampleTags) in /Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/Features/type_text.feature:line 5\n   at InvokeStub_TypeTextFeature.CheckTextContent(Object, Span`1)\n\n--TearDown\n   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.Appium.AppiumDriver`1.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)\n   at OpenQA.Selenium.Appium.AppiumDriver`1.FindElementByName(String name)\n   at WordPadTesting.Hooks.Hooks.TearDown() in /Users/anatoliiyakubyshyn/Documents/Solvd/net/specflow/ExcelTesting/Hooks/Hook.cs:line 30\n   at InvokeStub_Action`1.Invoke(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType hookType)\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireScenarioEvents(HookType bindingEvent)\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnScenarioEnd()\n   at TechTalk.SpecFlow.TestRunner.OnScenarioEnd()\n   at WordPadTesting.Features.TypeTextFeature.TestTearDown()\n   at InvokeStub_TypeTextFeature.TestTearDown(Object, Object, IntPtr*)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)","DisplayName":"CheckTextContent(\"Hello\",null)","Messages":[{"Category":"StdOutMsgs","Text":"Given I am on document page with clean document\n-> No matching step definition found for the step. Use the following code to create one:\n        [Given(@\"I am on document page with clean document\")]\n        public void GivenIAmOnDocumentPageWithCleanDocument()\n        {\n            _scenarioContext.Pending();\n        }\n\nWhen I type Hello\n-> No matching step definition found for the step. Use the following code to create one:\n        [When(@\"I type Hello\")]\n        public void WhenITypeHello()\n        {\n            _scenarioContext.Pending();\n        }\n\nThen Hello is displayed\n-> No matching step definition found for the step. Use the following code to create one:\n        [Then(@\"Hello is displayed\")]\n        public void ThenHelloIsDisplayed()\n        {\n            _scenarioContext.Pending();\n        }\n\n"}],"ComputerName":"Anatoliis-MacBook-Pro","Duration":"00:00:24.5775410","StartTime":"2024-06-06T14:14:38.913783+00:00","EndTime":"2024-06-06T14:15:03.491202+00:00","Properties":[]}],"TestRunStatistics":{"ExecutedTests":3,"Stats":{"Failed":3}},"ActiveTests":[]},"RunAttachments":[],"ExecutorUris":["executor://nunit3testexecutor/"]}}
+TpTrace Verbose: 0 : 20049, 4, 2024/06/06, 17:15:04.080, 21641238994416, testhost.dll, BaseRunTests.RunTests: Run is complete.
+TpTrace Verbose: 0 : 20049, 5, 2024/06/06, 17:15:04.080, 21641239692083, testhost.dll, TcpClientExtensions.MessageLoopAsync: NotifyDataAvailable remoteEndPoint: [::ffff:127.0.0.1]:50718 localEndPoint: [::ffff:127.0.0.1]:50719
+TpTrace Information: 0 : 20049, 5, 2024/06/06, 17:15:04.080, 21641239878208, testhost.dll, TestRequestHandler.ProcessRequests: received message: (TestSession.Terminate) -> null
+TpTrace Information: 0 : 20049, 5, 2024/06/06, 17:15:04.080, 21641239895625, testhost.dll, Session End message received from server. Closing the connection.
+TpTrace Information: 0 : 20049, 1, 2024/06/06, 17:15:04.081, 21641240138208, testhost.dll, SocketClient.Stop: Stop communication from server endpoint: 127.0.0.1:050718
+TpTrace Information: 0 : 20049, 5, 2024/06/06, 17:15:04.081, 21641240151416, testhost.dll, SocketClient.Stop: Stop communication from server endpoint: 127.0.0.1:050718
+TpTrace Information: 0 : 20049, 5, 2024/06/06, 17:15:04.081, 21641240200166, testhost.dll, SocketClient: Stop: Cancellation requested. Stopping message loop.
+TpTrace Information: 0 : 20049, 1, 2024/06/06, 17:15:04.081, 21641240165041, testhost.dll, SocketClient: Stop: Cancellation requested. Stopping message loop.
+TpTrace Verbose: 0 : 20049, 5, 2024/06/06, 17:15:04.081, 21641240294708, testhost.dll, LengthPrefixCommunicationChannel.Dispose: Dispose reader and writer.
+TpTrace Verbose: 0 : 20049, 1, 2024/06/06, 17:15:04.081, 21641240306875, testhost.dll, LengthPrefixCommunicationChannel.Dispose: Dispose reader and writer.
+TpTrace Information: 0 : 20049, 5, 2024/06/06, 17:15:04.081, 21641240329875, testhost.dll, Closing the connection !
+TpTrace Information: 0 : 20049, 1, 2024/06/06, 17:15:04.081, 21641240386458, testhost.dll, Testhost process exiting.
+TpTrace Information: 0 : 20049, 5, 2024/06/06, 17:15:04.081, 21641240564916, testhost.dll, SocketClient.PrivateStop: Stop communication from server endpoint: 127.0.0.1:050718, error:
+TpTrace Verbose: 0 : 20049, 5, 2024/06/06, 17:15:04.081, 21641240693375, testhost.dll, LengthPrefixCommunicationChannel.Dispose: Dispose reader and writer.
+TpTrace Verbose: 0 : 20049, 5, 2024/06/06, 17:15:04.081, 21641240718916, testhost.dll, TcpClientExtensions.MessageLoopAsync: exiting MessageLoopAsync remoteEndPoint: [::ffff:127.0.0.1]:50718 localEndPoint: [::ffff:127.0.0.1]:50719

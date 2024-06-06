@@ -84,7 +84,7 @@ namespace WordPadTesting.Features
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             argumentsOfScenario.Add("text", text);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check text content", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 3
+#line 2
     this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -94,13 +94,13 @@ namespace WordPadTesting.Features
             else
             {
                 this.ScenarioStart();
-#line 4
+#line 3
         testRunner.Given("I am on document page with clean document", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 5
+#line 4
         testRunner.When(string.Format("I type {0}", text), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 6
+#line 5
         testRunner.Then(string.Format("{0} is displayed", text), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
