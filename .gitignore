@@ -1,1 +1,2 @@
-*.feature.cs
+obj
+bin
