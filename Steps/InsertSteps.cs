@@ -26,7 +26,7 @@ namespace WordPadTesting.Steps
             documentPage.ClearText();
         }
 
-       [When("I insert the current date and time")]
+        [When("I insert the current date and time")]
         public void WhenIInsertTheCurrentDateAndTime()
         {
             documentPage.InsertDateTime();
@@ -43,9 +43,8 @@ namespace WordPadTesting.Steps
 
             Assert.IsTrue(normalizedDocumentText.Contains(normalizedCurrentDate), $"Expected '{normalizedCurrentDate}' to be part of '{normalizedDocumentText}'");
         }
-        
 
-         private string RemoveInvisibleCharacters(string input)
+        private string RemoveInvisibleCharacters(string input)
         {
             return Regex.Replace(input, @"\p{C}+", string.Empty);
         }
