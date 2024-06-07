@@ -37,12 +37,5 @@ namespace WordPadTesting.Steps
             Assert.AreEqual(text, documentPage.GetText());
         }
 
-        public void Run(string text) {
-            GivenIamOnDocumentPageWithCleanDocument();
-            WhenITypeText(text);
-            ThenTextIsDisplayed(text);
-        }
-
-
     }
 }
