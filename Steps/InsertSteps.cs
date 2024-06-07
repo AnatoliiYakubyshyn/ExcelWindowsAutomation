@@ -5,6 +5,7 @@ using NUnit.Framework;
 using OpenQA.Selenium.Appium.Windows;
 using TechTalk.SpecFlow;
 using System.Text.RegularExpressions;
+using ZebrunnerAgent.Attributes;
 
 namespace WordPadTesting.Steps
 {

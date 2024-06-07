@@ -4,13 +4,9 @@ using OpenQA.Selenium.Appium.Windows;
 using TechTalk.SpecFlow;
 using ZebrunnerAgent.Attributes;
 
-[assembly: ZebrunnerAssembly]
-
-
 namespace WordPadTesting.Steps
 {
     [Binding]
-    [TestFixture, ZebrunnerClass, ZebrunnerTest]
     public sealed class WordPadStepDefinitions
     {
         private WindowsDriver<WindowsElement> driver;
@@ -40,7 +36,6 @@ namespace WordPadTesting.Steps
         {
             Assert.AreEqual(text, documentPage.GetText());
         }
-
 
     }
 }
