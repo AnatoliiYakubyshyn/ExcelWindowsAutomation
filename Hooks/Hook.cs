@@ -8,7 +8,8 @@ using OpenQA.Selenium.Appium;
 using OpenQA.Selenium.Appium.Windows;
 using System.Text.RegularExpressions;
 using OpenQA.Selenium;
-
+using ExcelTesting.Pages;
+using WordPadWindowsAutomation.Configuration;
 
 namespace WordPadTesting.Hooks
 {
@@ -59,11 +60,11 @@ namespace WordPadTesting.Hooks
         [BeforeScenario(Order = 1)]
         public void FirstBeforeScenario(ScenarioContext scenarioContext)
         {
+            string baseUrl = ConfigurationHelper.GetBaseUrl(); 
+            
             var appiumOptions = new AppiumOptions();
-
             appiumOptions.AddAdditionalCapability("app", @"C:\Program Files\Windows NT\Accessories\wordpad.exe");
-            string urlString = $"http://18.196.125.117:4723/wd/hub";
-            Uri url = new Uri(urlString);
+            Uri url = new Uri(baseUrl);
 
             // Initialize the WindowsDriver
             driver = new WindowsDriver<WindowsElement>(url, appiumOptions);

@@ -1,11 +1,15 @@
 using System;
 using OpenQA.Selenium.Appium.Windows;
+using WordPadWindowsAutomation.Configuration;
 
 namespace ExcelTesting.Pages
 {
     public class DocumentPage : AbstractPage
     {
-        public DocumentPage(WindowsDriver<WindowsElement> driver):base(driver) {}
+        public DocumentPage(WindowsDriver<WindowsElement> driver):base(driver) {
+            string baseUrl = ConfigurationHelper.GetBaseUrl();
+            SetUrl(baseUrl);
+        }
         private WindowsElement ViewTab() => Driver.FindElementByName("View");
 
         private WindowsElement StatusBarCheckbox() => Driver.FindElementByName("Status bar");
