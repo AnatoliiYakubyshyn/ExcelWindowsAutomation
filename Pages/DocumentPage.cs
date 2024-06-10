@@ -6,6 +6,11 @@ namespace ExcelTesting.Pages
     public class DocumentPage : AbstractPage
     {
         public DocumentPage(WindowsDriver<WindowsElement> driver):base(driver) {}
+        private WindowsElement ViewTab() => Driver.FindElementByName("View");
+
+        private WindowsElement StatusBarCheckbox() => Driver.FindElementByName("Status bar");
+
+        private WindowsElement RulerCheckbox() => Driver.FindElementByName("Ruler");
 
         private WindowsElement GetWordPadPage() {
             return Driver.FindElementByName("Rich Text Window");
@@ -41,5 +46,20 @@ namespace ExcelTesting.Pages
             DateAndTimeButton().Click();
             OkButton().Click();
         }
+
+        public void ClickViewTab() => ViewTab().Click();
+
+        public void ToggleStatusBarCheckbox() => StatusBarCheckbox().Click();
+
+        public void ToggleRulerCheckbox() => RulerCheckbox().Click();
+
+        public bool IsRulerChecked() => RulerCheckbox().Selected;
+
+        public bool IsStatusBarChecked() => StatusBarCheckbox().Selected;
+        
+        public bool IsStatusBarPresent() => StatusBarCheckbox().Displayed;
+
+        public bool IsRulerPresent() => RulerCheckbox().Displayed;
+
     }
 }
