@@ -22,6 +22,12 @@ namespace WordPadTesting
             ExecuteSpecFlowTest("type_text.feature");
         }
 
+        [TestCase]
+        public void TestViewButtonFeature() 
+        {
+            ExecuteSpecFlowTest("view_button.feature");
+        }
+
         private void ExecuteSpecFlowTest(string featureFile)
         {
             // Побудова команди для запуску dotnet test з конкретним файлом функціональності

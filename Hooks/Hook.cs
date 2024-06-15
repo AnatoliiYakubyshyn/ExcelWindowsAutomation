@@ -6,7 +6,10 @@ using TechTalk.SpecFlow;
 
 using OpenQA.Selenium.Appium;
 using OpenQA.Selenium.Appium.Windows;
-
+using System.Text.RegularExpressions;
+using OpenQA.Selenium;
+using ExcelTesting.Pages;
+using WordPadWindowsAutomation.Configuration;
 
 namespace WordPadTesting.Hooks
 {
@@ -26,19 +29,42 @@ namespace WordPadTesting.Hooks
         [AfterScenario]
         public void TearDown()
         {
-            driver.FindElementByName("Close").Click();
-            driver.FindElementByName("Don't Save").Click();
-            driver.Quit();
+            try
+            {
+                var closeButton = driver.FindElementByName("Close");
+                if (closeButton.Displayed)
+                {
+                    closeButton.Click();
+                }
+
+                var dontSaveButton = driver.FindElementByName("Don't Save");
+                if (dontSaveButton.Displayed)
+                {
+                    dontSaveButton.Click();
+                }
+            }
+            catch (NoSuchElementException)
+            {
+                Console.WriteLine("No dialog or elements to close were found.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"An error occurred during teardown: {ex.Message}");
+            }
+            finally
+            {
+                driver.Quit();
+            }
         }
 
         [BeforeScenario(Order = 1)]
         public void FirstBeforeScenario(ScenarioContext scenarioContext)
         {
-            var appiumOptions = new AppiumOptions();
+            string baseUrl = ConfigurationHelper.GetBaseUrl(); 
             
+            var appiumOptions = new AppiumOptions();
             appiumOptions.AddAdditionalCapability("app", @"C:\Program Files\Windows NT\Accessories\wordpad.exe");
-            string urlString = $"http://18.196.125.117:4723/wd/hub";
-            Uri url = new Uri(urlString);
+            Uri url = new Uri(baseUrl);
 
             // Initialize the WindowsDriver
             driver = new WindowsDriver<WindowsElement>(url, appiumOptions);
@@ -46,7 +72,6 @@ namespace WordPadTesting.Hooks
 
             // Register the driver instance
             _container.RegisterInstanceAs<WindowsDriver<WindowsElement>>(driver);
-
         }
 
     }
