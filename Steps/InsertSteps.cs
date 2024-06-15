@@ -10,6 +10,7 @@ using ZebrunnerAgent.Attributes;
 namespace WordPadTesting.Steps
 {
     [Binding]
+    [ZebrunnerClass]
     public sealed class InsertSteps
     {
         private readonly WindowsDriver<WindowsElement> driver;

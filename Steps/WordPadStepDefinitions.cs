@@ -7,6 +7,7 @@ using ZebrunnerAgent.Attributes;
 namespace WordPadTesting.Steps
 {
     [Binding]
+    [ZebrunnerClass]
     public sealed class WordPadStepDefinitions
     {
         private WindowsDriver<WindowsElement> driver;
@@ -36,6 +37,7 @@ namespace WordPadTesting.Steps
         {
             Assert.AreEqual(text, documentPage.GetText());
         }
+        
 
     }
 }
