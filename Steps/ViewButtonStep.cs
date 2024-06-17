@@ -10,6 +10,7 @@ using System.Threading;
 namespace WordPadWindowsAutomation.Steps
 {
     [Binding]
+    [ZebrunnerClass]
     public class ViewButtonStep
     {
         private static WindowsDriver<WindowsElement> _driver;
@@ -34,10 +35,8 @@ namespace WordPadWindowsAutomation.Steps
         }
 
         [When("I check if \"(.*)\" and \"(.*)\" are present")]
-        public void WhenICheckIfStatusBarAndRulerArePresent(string statusBar, string ruler) //click
+        public void WhenICheckIfStatusBarAndRulerArePresent(string statusBar, string ruler)
         {
-           // TestContext.WriteLine($"STATUS Bar checked: {_documentPage.IsStatusBarChecked()}");
-           // TestContext.WriteLine($"RULER checked: {_documentPage.IsRulerChecked()}");
             _documentPage.ToggleRulerCheckbox();
             _documentPage.ToggleStatusBarCheckbox();
             Assert.IsTrue(_documentPage.IsRulerPresent());
@@ -61,8 +60,6 @@ namespace WordPadWindowsAutomation.Steps
         [Then("the \"(.*)\" and \"(.*)\" should not be present")]
         public void ThenTheStatusBarAndRulerShouldNotBePresent(string statusBar, string ruler)
         {
-            TestContext.WriteLine($"2STATUS Bar checked: {_documentPage.IsStatusBarChecked()}");
-            TestContext.WriteLine($"2RULER checked: {_documentPage.IsRulerChecked()}");
             Assert.IsFalse(_documentPage.IsRulerChecked());
             Assert.IsFalse(_documentPage.IsStatusBarChecked());
         }
