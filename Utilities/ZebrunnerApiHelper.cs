@@ -26,12 +26,10 @@ namespace WordPadWindowsAutomation.Utilities
 
         private static async Task<string> GetAuthTokenAsync()
         {
-            /////////
             if (!string.IsNullOrEmpty(AuthToken))
             {
                 return AuthToken;
             }
-            /////
             Logger.Info($"BaseUrl: {BaseUrl}");
             Logger.Info($"RefreshToken: {RefreshToken}");
 
@@ -40,39 +38,26 @@ namespace WordPadWindowsAutomation.Utilities
                 var content = new StringContent(JsonConvert.SerializeObject(new { refreshToken = RefreshToken }), Encoding.UTF8, "application/json");
                 try
                 {
-                    //////////////////
                     Logger.Info("Sending request to refresh auth token...");
                     Logger.Info($"Request URL: {BaseUrl}/api/iam/v1/auth/refresh");
                     Logger.Info($"Request Body: {JsonConvert.SerializeObject(new { refreshToken = RefreshToken })}");
-                    /////////////////////////
                     var response = await client.PostAsync($"{BaseUrl}/api/iam/v1/auth/refresh", content);
-                    ////////////////
                     Logger.Info($"Response Status: {response.StatusCode}");
 
                     var responseData = await response.Content.ReadAsStringAsync();
                     Logger.Info($"Response Data: {responseData}");
-                    //////////////////
                     response.EnsureSuccessStatusCode();
 
-                   // var responseData = await response.Content.ReadAsStringAsync();
                     dynamic result = JsonConvert.DeserializeObject(responseData);
                     Logger.Info($"Auth Token: {result.authToken}");
                     AuthToken = result.authToken;
                     return AuthToken;
-                   // return result.authToken;
                 }
                 catch (Exception ex)
                 {
                     Logger.Error($"Failed to retrieve auth token: {ex.Message}");
                     throw;
                 }
-
-                // var response = await client.PostAsync($"{BaseUrl}/api/iam/v1/auth/refresh", content);
-                // response.EnsureSuccessStatusCode();
-
-                // var responseData = await response.Content.ReadAsStringAsync();
-                // dynamic result = JsonConvert.DeserializeObject(responseData);
-                // return result.authToken;
             }
         }
 
@@ -122,51 +107,6 @@ namespace WordPadWindowsAutomation.Utilities
                 }
             }
         }
-
-        // public static async Task<string> StartTestRunAsync(string projectKey, string environment, string build)
-        // {
-        //     Console.WriteLine("BlaaaaBBBBB");
-        //     using (var client = new HttpClient())
-        //     {
-        //         TestContext.WriteLine($"STATUSSSS : {BaseUrl}");
-        //         Console.WriteLine($"STATUSSSS : {BaseUrl}");
-        //         client.BaseAddress = new Uri(BaseUrl);
-        //         TestContext.WriteLine($"TOKENNN : {RefreshToken}");
-        //         Console.WriteLine($"TOKENNN : {RefreshToken}");
-        //         client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", RefreshToken);
-
-        //         var runInfo = new
-        //         {
-        //             projectKey,
-        //             environment,
-        //             build
-        //         };
-
-        //         var content = new StringContent(JsonConvert.SerializeObject(runInfo), Encoding.UTF8, "application/json");
-
-        //         try
-        //         {
-        //             var response = await client.PostAsync("/api/reporting/test-runs", content);
-        //             response.EnsureSuccessStatusCode();
-
-        //             var responseData = await response.Content.ReadAsStringAsync();
-        //             dynamic result = JsonConvert.DeserializeObject(responseData);
-        //             Logger.Info($"Test run started successfully with ID: {result.id}");
-        //             return result.id;
-        //         }
-        //         catch (Exception ex)
-        //         {
-        //             Logger.Error($"Failed to start test run: {ex.Message}");
-        //             throw;
-        //         }        
-        //         // var response = await client.PostAsync("/api/reporting/test-runs", content);
-        //         // response.EnsureSuccessStatusCode();
-
-        //         // var responseData = await response.Content.ReadAsStringAsync();
-        //         // dynamic result = JsonConvert.DeserializeObject(responseData);
-        //         // return result.id;
-        //     }
-        // }
 
         public static async Task<string> StartTestAsync(string testRunId, string testName, string className, string methodName, string maintainer, DateTime startedAt)
         {
